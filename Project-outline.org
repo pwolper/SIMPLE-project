@@ -24,6 +24,6 @@ relevant data to run the simple model in a chosen condition and context of a hyp
 
 * Wheat Infos
 Simulate wheat in Cerrado. How much wheat do we really get?
-Download weather data from MASA power.
+Download weather data from NASA power.
 Experiment provided by Rogerio.
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
