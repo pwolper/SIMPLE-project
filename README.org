@@ -3,7 +3,7 @@
 * Organization
 1. Organization (Run SIMPLE)
 2. Calibration (stats) --> *plots*
-3. Validation (stats) --> *plots*
+3. (Validation (stats) --> *plots*) WE CAN SKIP THIS STEP.
 5. Application --> *plots*
 
 * Data
