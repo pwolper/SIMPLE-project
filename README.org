@@ -3,28 +3,33 @@
 * Organization
 1. Organization (Run SIMPLE)
 2. Calibration (stats) --> *plots*
-3. (Validation (stats) --> *plots*) WE CAN SKIP THIS STEP.
-5. Application --> *plots*
+3. Application --> *plots*
 
 * Data
 _Data necessary to run the SIMPLE model:_
 - weather (download from NASA)
-- soil (supplied)
+- soil (*Where is the soil data from?*)
 - crop management (supplied)
 
+  Files so far in /data//:
+  - /location-info.xlsx/ - Location info for experimental location.
+  - /dataset-BRS_264-MN-1209.xlsx - Expermimental crop from locations.
+
 ** Experimental Data
--> calibration for this data. Cultivar and species parameters (adjust in respective order)
-Optimal conditions (no disease, pest, nutrient deficiency)
+The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
 
-** Farmer's Data
-Validation of the model. Origin of the yield gap.
+= Cultivar and species parameters (When adjusting do so in respective order)
 
-** Application Data
+*  Calibration of the SIMPLE model with wheat data from the /Cerrado/ in Brazil
+Simulate wheat in Cerrado. How much wheat do we really get?
+
+How will we calibrate? Using subsets of the data? Sensitivity Analysis?
+
+* Model Application
 relevant data to run the simple model in a chosen condition and context of a hypothesis.
 
+Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 * Wheat Infos
-Simulate wheat in Cerrado. How much wheat do we really get?
 Download weather data from NASA power.
 Experiment provided by Rogerio.
-Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 Clone this git repository on local machine
