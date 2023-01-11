@@ -5,15 +5,20 @@
 2. Calibration (stats) --> *plots*
 3. Application --> *plots*
 
+* Running Tasks
+
 * Data
 _Data necessary to run the SIMPLE model:_
 - weather (download from NASA)
-- soil (*Where is the soil data from?*)
+- soil (*Where is the soil data?*)
 - crop management (supplied)
 
   Files so far in /data//:
   - /location-info.xlsx/ - Location info for experimental location.
   - /dataset-BRS_264-MN-1209.xlsx - Expermimental crop from locations.
+
+*** TODO download weather data from NASA power of all locations.
+
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
