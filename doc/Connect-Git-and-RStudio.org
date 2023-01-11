@@ -1,0 +1,36 @@
+#+title: Connect Git And R Studio
+
+This set of instructtions was generated with ChatGPT by OpenAI on <2023-01-11 Mi>, using the search phrase: "can you wite a documentation how to connect RStudio with Git".
+
+* How to connec RStudio with Git:
+
+1. Install Git on your computer by downloading the appropriate installer from the official website (https://git-scm.com/downloads).
+
+2. Open RStudio and navigate to the "Global Options" menu by clicking on "Tools" and then "Global Options".
+
+3. In the "Git/SVN" section, specify the path to the Git executable on your computer. This is typically in the "bin" directory of the location where Git was installed.
+
+4. Open an RStudio project that you would like to version control using Git.
+
+5. Open the "Git" pane by clicking on "View" and then "Show Git View".
+
+6. In the "Git" pane, click on the "More" button (represented by three dots) and select "Shell".
+
+7. A terminal window will open, and you can use Git commands to initialize a new repository, add files, commit changes, and push changes to a remote repository.
+
+8. To Initialize the project directory as a git repository, type the command git init in the terminal,
+
+9. To add files to the repository, use the command git add <filename> or git add . to add all files
+
+10. To commit the changes use the command git commit -m "message"
+
+11. To push the changes to a remote repository use the command git push <remote> <branch>
+
+12. In order to use git with Rstudio, you also need to have a remote repository service like GitHub, GitLab, etc or use a self-hosted git service.
+
+13. Keep in mind that Git is a powerful tool and it's important to have a basic understanding of how it works before using it. If you are new to Git, I would recommend reading through the official documentation and resources, which can be found on the official website (https://git-scm.com/).
+
+14. That's the general idea of how to connect RStudio with Git, let me know if you have any other question.
+
+￼
+￼
