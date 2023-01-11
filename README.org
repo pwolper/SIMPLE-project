@@ -1,5 +1,11 @@
 #+title: Project Outline
 
+*** Git and GitHub Basics
+URL of this repository: [[https://github.com/pwolper/SIMPLE-project.git]]
+
+*** Connect Git/GitHuB to RStudio
+_In RStudio:_
+
 * Organization
 1. Organization (Run SIMPLE)
 2. Calibration (stats) --> *plots*
@@ -35,7 +41,3 @@ How will we calibrate? Using subsets of the data? Sensitivity Analysis?
 relevant data to run the simple model in a chosen condition and context of a hypothesis.
 
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
-* Wheat Infos
-Download weather data from NASA power.
-Experiment provided by Rogerio.
-Clone this git repository on local machine
