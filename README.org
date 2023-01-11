@@ -6,6 +6,8 @@
 3. Application --> *plots*
 
 * Running Tasks
+- [ ] Download weather data from NASA power of all locations.
+- [ ] Get the model running woth experimental data
 
 * Data
 _Data necessary to run the SIMPLE model:_
@@ -15,9 +17,8 @@ _Data necessary to run the SIMPLE model:_
 
   Files so far in /data//:
   - /location-info.xlsx/ - Location info for experimental location.
-  - /dataset-BRS_264-MN-1209.xlsx - Expermimental crop from locations.
+  - /dataset-BRS_264-MN-1209.xlsx/ - Expermimental crop from locations.
 
-*** TODO download weather data from NASA power of all locations.
 
 
 ** Experimental Data
