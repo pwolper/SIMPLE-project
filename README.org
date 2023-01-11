@@ -1,10 +1,9 @@
 #+title: Project Outline
 
-*** Git and GitHub Basics
+*** General Information
 URL of this repository: [[https://github.com/pwolper/SIMPLE-project.git]]
 
-*** Connect Git/GitHuB to RStudio
-_In RStudio:_
+For more infromation on how to connect with Git and GitHub from RStudio see /doc//.
 
 * Organization
 1. Organization (Run SIMPLE)
