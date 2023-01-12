@@ -3,7 +3,7 @@
 *** General Information
 URL of this repository: [[https://github.com/pwolper/SIMPLE-project.git]]
 
-For more infromation on how to connect with Git and GitHub from RStudio see /doc//.
+For more infromation on how to connect with Git and GitHub from RStudio see /doc/Connect-Git-and-RStudio.org/.
 
 * Organization
 1. Organization (Run SIMPLE)
@@ -23,7 +23,6 @@ _Data necessary to run the SIMPLE model:_
   Files so far in /data//:
   - /location-info.xlsx/ - Location info for experimental location.
   - /dataset-BRS_264-MN-1209.xlsx/ - Expermimental crop from locations.
-
 
 
 ** Experimental Data
