@@ -1,0 +1,14 @@
+"Crop","Exp","Label","Trt","SowingDate","Duration","Biomass","Yield","MaturityDay"
+"corn","TEST","Corn_freising1",1,2010-04-15,382,5534,2767,2011-05-02
+"corn","TEST","Corn_freising10",10,2019-04-15,170,3857,1928,2019-10-02
+"corn","TEST","Corn_freising11",11,2020-04-14,164,2882,1441,2020-09-25
+"corn","TEST","Corn_freising12",12,1921-04-15,388,6546,3273,1922-05-08
+"corn","TEST","Corn_freising13",13,1922-04-15,175,2917,1458,1922-10-07
+"corn","TEST","Corn_freising2",2,2011-04-15,230,5411,2705,2011-12-01
+"corn","TEST","Corn_freising3",3,2012-04-14,369,4378,2189,2013-04-18
+"corn","TEST","Corn_freising4",4,2013-04-15,348,1737,868,2014-03-29
+"corn","TEST","Corn_freising5",5,2014-04-15,378,6579,3290,2015-04-28
+"corn","TEST","Corn_freising6",6,2015-04-15,160,890,445,2015-09-22
+"corn","TEST","Corn_freising7",7,2016-04-14,362,4503,2251,2017-04-11
+"corn","TEST","Corn_freising8",8,2017-04-15,368,5332,2666,2018-04-18
+"corn","TEST","Corn_freising9",9,2018-04-15,129,2830,1415,2018-08-22
