@@ -9,6 +9,7 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 1. Organization (Run SIMPLE)
 2. Calibration (stats) --> *plots*
 3. Application --> *plots*
+teeeeest
 
 * Running Tasks
 - [ ] Download weather data from NASA power of all locations.
