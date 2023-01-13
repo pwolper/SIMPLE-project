@@ -15,16 +15,26 @@ teeeeest
 - [ ] Download weather data from NASA power of all locations.
 - [ ] Get the model running with experimental data
 - [ ] Merge experimental data for Cerrado with /SIMPLE/Input/.
+- [ ] Get soil data
 
 * Data
+change
 _Data necessary to run the SIMPLE model:_
 - weather (download from NASA)
-- soil (*Where is the soil data?*)
+- soil (*Find soil data from NASA power or SoilGrids*)
 - crop management (supplied)
 
   Files so far in /data//:
   - /location-info.xlsx/ - Location info for experimental location.
   - /dataset-BRS_264-MN-1209.xlsx/ - Expermimental crop from locations.
+
+** Soil
+Either take soils from the simple model. Research which soil would be the best.
+
+Or use online data to estimate parameters ourselves.
+eg. AWC = (FC - WP)/10 * BD
+[FC WP] - Estimation from soil texture.
+% Clay Sand % pedotransfer equation
 
 
 ** Experimental Data
