@@ -40,3 +40,6 @@ How will we calibrate? Using subsets of the data? Sensitivity Analysis?
 relevant data to run the simple model in a chosen condition and context of a hypothesis.
 
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
+
+** Discussion
+Describe and discuss results. First describe the calibration results. Then continue with application results.
