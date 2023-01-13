@@ -13,7 +13,7 @@ teeeeest
 
 * Running Tasks
 - [ ] Download weather data from NASA power of all locations.
-- [ ] Get the model running with experimental data
+- [ ] Get the model running with experimental data for everybody.
 - [ ] Merge experimental data for Cerrado with /SIMPLE/Input/.
 - [ ] Get soil data
 
@@ -36,6 +36,7 @@ eg. AWC = (FC - WP)/10 * BD
 [FC WP] - Estimation from soil texture.
 % Clay Sand % pedotransfer equation
 
+Soil parameter RDZ can be calibrated if S_Water is not enough.
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
