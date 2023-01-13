@@ -10,10 +10,10 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 2. Calibration (stats) --> *plots*
 3. Application --> *plots*
 teeeeest
-
+Test2_____Martini
 * Running Tasks
 - [ ] Download weather data from NASA power of all locations.
-- [ ] Get the model running with experimental data for everybody.
+- [ ] Get the model running with experimental data
 - [ ] Merge experimental data for Cerrado with /SIMPLE/Input/.
 - [ ] Get soil data
 
@@ -36,7 +36,6 @@ eg. AWC = (FC - WP)/10 * BD
 [FC WP] - Estimation from soil texture.
 % Clay Sand % pedotransfer equation
 
-Soil parameter RDZ can be calibrated if S_Water is not enough.
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
