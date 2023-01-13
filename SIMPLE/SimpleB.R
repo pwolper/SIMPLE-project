@@ -93,7 +93,7 @@ MapoutputYear=2001
 ############  Model starts here  ##################################################################
 ############  Read inputs - treatments, soil weather, CO2
 if(GridsimulationSwitch=='OFF'){
-  management<-read.table("./Input/Simulation Management.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)
+  management<-read.table("./Input/Simulation Management.csv",header=TRUE,sep=";",stringsAsFactors=FALSE)
   treatment<-read.table("./Input/Treatment.csv",header=TRUE,sep=";",stringsAsFactors=FALSE);treatment$Species.=tolower(treatment$Species.)
   cultivar<-read.table("./Input/Cultivar.csv",header=TRUE,sep=",",stringsAsFactors=FALSE);cultivar$Species.=tolower(cultivar$Species.)
   irri<-read.table("./Input/Irrigation.csv",header=TRUE,sep=";",stringsAsFactors=FALSE);irri$Species.=tolower(irri$Species.)
