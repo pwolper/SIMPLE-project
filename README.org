@@ -26,6 +26,19 @@ _Data necessary to run the SIMPLE model:_
   - /location-info.xlsx/ - Location info for experimental location.
   - /dataset-BRS_264-MN-1209.xlsx/ - Expermimental crop from locations.
 
+** Data files to use:
+*** [ ] Cultivar.csv
+Which cultivar to use? Yecorea Rojo? Batten? Possibly other?
+*** [ ] Species Parameters.csv
+Species parameters already set! Test sensitivity.
+*** [ ] Irrigation.csv
+What amount of water is irrigated? What means dry? What data can we supply for the Irrigation.csv?
+*** [ ] Soil.csv
+Which soil can we use? Firgure out the soil characteristics of soil in the Brazilian Cerrado and compare to soils found in soil.csv
+*** [ ] Treatment.csv
+Fill out the treatment information. InitialBio? InitialFsolar? InitialTT?
+*** [ ] Simulation managment.csv
+
 ** Soil
 Either take soils from the simple model. Research which soil would be the best.
 
