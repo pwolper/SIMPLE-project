@@ -49,6 +49,7 @@ eg. AWC = (FC - WP)/10 * BD
 % Clay Sand % pedotransfer equation
 
 Soil: sand should be chosen
+SAND: 0.4.
 
 
 ** Experimental Data
