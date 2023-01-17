@@ -39,6 +39,7 @@ Which soil can we use? Firgure out the soil characteristics of soil in the Brazi
 Fill out the treatment information. InitialBio? InitialFsolar? InitialTT?
 *** [ ] Simulation managment.csv
 
+
 ** Soil
 Either take soils from the simple model. Research which soil would be the best.
 
