@@ -93,4 +93,16 @@ ON_Off;Species*;Exp*;Trt*;Label;Water;NOTE
 0;corn;TEST;11;Corn_freising11;yes;Corn_freising11
 0;corn;TEST;12;Corn_freising12;yes;Corn_freising12
 0;corn;TEST;13;Corn_freising13;yes;Corn_freising13
-0;wheat;BRS264;
+0;wheat;BRS264;1;RIOPA_18_irrigated;yes;RIOPA_18_irrigated;
+0;wheat;BRS264;2;RIOPA_19_irrigated;yes;RIOPA_19_irrigated;
+0;wheat;BRS264;3;VICO_19_irrigated;yes;VICO_19_irrigated;
+0;wheat;BRS264;4;VICO_20_irrigated;yes;VICO_20_irrigated;
+0;wheat;BRS264;6;VICO_20_nonirrigated;yes;VICO_20_nonirrigated;
+0;wheat;BRS264;7;SAOG_20_nonirrigated;yes;SAOG_20_nonirrigated;
+0;wheat;BRS264;8;SAOG_20_irrigated;yes;SAOG_20_irrigated;
+0;wheat;BRS264;9;SELAG_20_irrigated;yes;SELAG_20_irrigated;
+0;wheat;BRS264;10;SAOG_21_nonirrigated;yes;SAOG_21_nonirrigated;
+0;wheat;BRS264;11;SAOG_21_irrigated;yes;SAOG_21_irrigated;
+0;wheat;BRS264;12;ITUT_21_nonirrigated;yes;ITUT_21_nonirrigated;
+0;wheat;BRS264;13;VICO_21_irrigated;yes;VICO_21_irrigated;
+0;wheat;BRS264;14;SAOG_21_nonirrigated;yes;SAOG_21_nonirrigated;
