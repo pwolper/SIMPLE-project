@@ -80,7 +80,7 @@ ON_Off;Species*;Exp*;Trt*;Label;Water;NOTE
 0;coffee;BRAZ1501;5;CoffeeArab_NOirrigated;yes;Trt5_CoffeeArab_NOirrigated
 0;coffee;BRAZ1501;6;CoffeeArab_NOirrigated;yes;Trt6_CoffeeArab_NOirrigated
 0;coffee;BRAZ1501;7;CoffeeArab_NOirrigated;yes;Trt7_CoffeeArab_NOirrigated
-1;corn;TEST;1;Corn_freising1;yes;Corn_freising1
+0;corn;TEST;1;Corn_freising1;yes;Corn_freising1
 0;corn;TEST;2;Corn_freising2;yes;Corn_freising2
 0;corn;TEST;3;Corn_freising3;yes;Corn_freising3
 0;corn;TEST;4;Corn_freising4;yes;Corn_freising4
