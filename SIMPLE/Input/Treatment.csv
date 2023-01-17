@@ -102,3 +102,9 @@ corn;TEST;10;Corn_freising10;FREIDE;400;19105;;New_soil;bavaria;0;0.95;1;0;0.001
 corn;TEST;11;Corn_freising11;FREIDE;400;20105;;New_soil;bavaria;0;0.95;1;0;0.001;Corn_freising11
 corn;TEST;12;Corn_freising12;FREIDE;400;21105;;New_soil;bavaria;0;0.95;1;0;0.001;Corn_freising12
 corn;TEST;13;Corn_freising13;FREIDE;400;22105;;New_soil;bavaria;0;0.95;1;0;0.001;Corn_freising13
+wheat;BRS264;1;RIOPA_18_irrigated;TBD;420;TBD;TBD;TBD;batten;
+wheat;BRS264;2;RIOPA_19_irrigated;TBD;420;TBD;TBD;TBD;batten;
+wheat;BRS264;3;VICO_19_irrigated;TBD;420;TBD;TBD;TBD;batten;
+wheat;BRS264;4;VICO_20_irrigated;TBD;420;TBD;TBD;TBD;batten;
+wheat;BRS264;5;VICO_19_irrigated;TBD;420;TBD;TBD;TBD;batten;
+to be continued...
