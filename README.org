@@ -67,5 +67,7 @@ relevant data to run the simple model in a chosen condition and context of a hyp
 
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 
+Worth reading:
+de Souza Noia Junior et al. 2021 ERL.
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.
