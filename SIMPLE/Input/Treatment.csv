@@ -1,17 +1,17 @@
 Species*;Exp*;Trt*;Label;Weather;CO2;SowingDate;HarvestDate;SoilName*;Cultivar*;IrrigationTrt;MaxIntercept;InitialBio;InitialTT;InitialFsolar;NOTE
-wheat;BRS264;1;RIOPA_18_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;2;RIOPA_19_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;3;VICO_19_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;4;VICO_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;6;VICO_20_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;7;SAOG_20_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;8;SAOG_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;9;SELAG_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;10;SAOG_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;11;SAOG_21_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;12;ITUT_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;13;VICO_21_irrigated;TBD;420;TBD;TBD;TBD;Batten;
-wheat;BRS264;14;SAOG_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;
+wheat;BRS264;1;RIOPA_18_irrigated;RIOPA1;420;18122;18255;Sandy loam1;Batten;0;0.95;1;0;0.001;RIOPA_18_irrigated
+wheat;BRS264;2;RIOPA_19_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;3;VICO_19_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;4;VICO_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;6;VICO_20_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;7;SAOG_20_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;8;SAOG_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;9;SELAG_20_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;10;SAOG_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;11;SAOG_21_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;12;ITUT_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;13;VICO_21_irrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
+wheat;BRS264;14;SAOG_21_nonirrigated;TBD;420;TBD;TBD;TBD;Batten;;;;;;
 wheat;FACE95;1;Full_irri-Normal CO2;MAR29601;350;95355;;Loamy sand1;Yecora Rojo;2;0.95;1;0;0.001;Trt2
 wheat;FACE95;2;Full_irri-High CO2;MAR29601;550;95355;;Loamy sand1;Yecora Rojo;2;0.95;1;0;0.001;Trt4
 wheat;FACE92;1;Dry_Normal CO2;MARI9201;350;92353;;Loamy sand1;Yecora Rojo;1;0.95;1;0;0.001;Trt1
