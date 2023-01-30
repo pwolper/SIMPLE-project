@@ -11,10 +11,10 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 3. Application --> *plots*
 
 * Running Tasks
-- [ ] Download weather data from NASA power of all locations.
+- [X] Download weather data from NASA power of all locations.
 - [ ] Get the model running with experimental data
-- [ ] Merge experimental data for Cerrado with /SIMPLE/Input/.
-- [ ] Get soil data
+- [-] Merge experimental data for Cerrado with /SIMPLE/Input/.
+- [X] Get soil data
 
 * Data
 _Data necessary to run the SIMPLE model:_
@@ -59,13 +59,15 @@ On Soil Pyramid: Sandy loam1 or similar?
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
-
 = Cultivar and species parameters (When adjusting do so in respective order)
 
 *  Calibration of the SIMPLE model with wheat data from the /Cerrado/ in Brazil
 Simulate wheat in Cerrado. How much wheat do we really get?
 
 How will we calibrate? Using subsets of the data? Sensitivity Analysis?
+
+_First Model simulation, 30.01.23_
+Using RIOPA_2018 the model simulates an actual yield very close to that measured RMSE = 2,5%
 
 * Model Application
 relevant data to run the simple model in a chosen condition and context of a hypothesis.
