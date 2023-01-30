@@ -48,6 +48,14 @@ eg. AWC = (FC - WP)/10 * BD
 [FC WP] - Estimation from soil texture.
 % Clay Sand % pedotransfer equation
 
+Soil: sand should be chosen
+
+_Soil content in the Cerrado:_
+- median percentage:
+  Sand, Silt, Clay : 48.6, 15.3, 33.5
+from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/cerrado-soils
+
+On Soil Pyramid: Sandy loam1 or similar?
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
@@ -64,5 +72,7 @@ relevant data to run the simple model in a chosen condition and context of a hyp
 
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 
+Worth reading:
+de Souza Noia Junior et al. 2021 ERL.
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.

@@ -230,8 +230,8 @@ ParaInput=function(i)
   ###read Lat and Elev from weather
   if(GridsimulationSwitch=='OFF'){
     weaheader=readLines(paste0("./Weather/",weaName,".WTH"),n=4)[4]
-    Lat=as.numeric(substr(weaheader,8,16))
-    Elev=as.numeric(substr(weaheader,26,31))}else{
+    Lat=as.numeric(substr(weaheader,9,13))
+    Elev=as.numeric(substr(weaheader,21,25))}else{
       Lat=treat$lat
       Elev=0
     }
