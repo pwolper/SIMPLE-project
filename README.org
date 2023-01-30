@@ -55,6 +55,8 @@ _Soil content in the Cerrado:_
   Sand, Silt, Clay : 48.6, 15.3, 33.5
 from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/cerrado-soils
 
+On Soil Pyramid: Sandy loam1 or similar?
+
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
 
