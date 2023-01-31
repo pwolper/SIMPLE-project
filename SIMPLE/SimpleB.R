@@ -142,22 +142,21 @@ source("Obsfunction.R")
 obs <- ObsInput(x)
 observations[[x]] <- obs
 
-#####Run all the experiment one by one
-# x=1:nrow(treatment)
-# results=list()
-# if(GridsimulationSwitch=='OFF'){observations=list()}
-# for (i in 1:length(x))
-# {
-#   results[[i]]=list()
-#   source("Mainfunction.R")
-#   res=RunModel(x[i])
-#   results[[i]]<-res
-# 
-#   if(GridsimulationSwitch=='OFF'){
-#     source("Obsfunction.R")
-#     obs=ObsInput(x[i])
-#     observations[[i]]<-obs}
-# }
+####Run all the experiment one by one
+x=1:nrow(treatment)
+results=list()
+if(GridsimulationSwitch=='OFF'){observations=list()}
+for (i in 1:length(x)){
+  results[[i]]=list()
+  source("Mainfunction.R")
+  res=RunModel(x[i])
+  results[[i]]<-res
+
+  if(GridsimulationSwitch=='OFF'){
+    source("Obsfunction.R")
+    obs=ObsInput(x[i])
+    observations[[i]]<-obs}
+}
 
 ##########
 
