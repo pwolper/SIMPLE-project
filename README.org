@@ -40,6 +40,29 @@ Fill out the treatment information. InitialBio? InitialFsolar? InitialTT?
 *** [ ] Simulation managment.csv
 
 
+** Experimental Data
+The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
+= Cultivar and species parameters (When adjusting do so in respective order)
+
+Experimental Data:
+
+| Year | Location      | Water | Name                 |
+| 2018 | Rio Paranaiba | yes   | RIOPA_18_irrigated   |
+| 2019 | Rio Paraneiba | yes   | RIOPA_19_irrigated   |
+| 2019 | Vicosa        | yes   | VICO_19_irrigated    |
+| 2020 | Vicosa        | yes   | VICO_20_irrigated    |
+| 2020 | Vicosa        | no    | VICO_20_nonirrigated |
+| 2021 | Vicosa        | yes   | VICO_21_irrigated    |
+| 2020 | Sao Gotardo   | yes   | SOAG_20_irrigated    |
+| 2020 | Sao Gotardo   | no    | SOAG_20_nonirrigated |
+| 2021 | Sao Gotardo   | yes   | SOAG_21_irrigated    |
+| 2021 | Sao Gotardo   | no    | SOAG_21_nonirrigated |
+| 2022 | Sao Gotardo   | no    | SOAG_22_nonirrigated |
+| 2020 | Sete Lagoas   | yes   | SETE_20_irrigated    |
+| 2021 | Itutinga      | no    | ITUT_21_nonirrigated |
+
+Plot the locations on a map? Using cartopleth package or similar. Check out rgraph gallery for inspiration.
+
 ** Soil
 Either take soils from the simple model. Research which soil would be the best.
 
@@ -56,10 +79,6 @@ _Soil content in the Cerrado:_
 from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/cerrado-soils
 
 On Soil Pyramid: Sandy loam1 or similar?
-
-** Experimental Data
-The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
-= Cultivar and species parameters (When adjusting do so in respective order)
 
 *  Calibration of the SIMPLE model with wheat data from the /Cerrado/ in Brazil
 Simulate wheat in Cerrado. How much wheat do we really get?
