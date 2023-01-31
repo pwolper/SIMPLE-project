@@ -205,6 +205,9 @@ if(GridsimulationSwitch=='OFF'){
   
   source("Plot.R")
   gplot(Res_daily,Res_Summary,Obs_Biomass,Obs_FSolar)
+  
+  
+  
 }else{
   treatmentsub=treatmentsingle[,c('Exp.','Species.','Trt.','row','col','lat')]
   Res_summary=Res_summary[,c("Exp","SowingDate","Duration","Biomass","Yield","MaturityDay")]
