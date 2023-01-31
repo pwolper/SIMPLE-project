@@ -91,13 +91,15 @@ gplot=function(Res_Daily,Res_Summary,Obs_Biomass,Obs_FSolar){
     RMSE_yield<-sqrt(mean((R_summary$Sim_Yield-R_summary$Obs_Yield)^2))
     RRMSE_yield<-RMSE_yield/mean(R_summary$Obs_Yield)
     
+  
     print(paste("RMSE for yield is: ",round(RMSE_yield,0),"kg.ha-1"))
     print(paste("RRMSE for yield is: ",100*round(RRMSE_yield,3),"%",sep=""))
     
-    Obs_Biomass$LableCrop=paste0(Obs_Biomass$Crop,"_",Obs_Biomass$Label)
-    Obs_FSolar$LableCrop=paste0(Obs_FSolar$Crop,"_",Obs_FSolar$Label)
-    P3=P1+geom_point(data=Obs_Biomass,aes(x=DAP, y=Biomass, colour=LableCrop),size=3)  #change to Label by Liujun
-    P4=P2+geom_point(data=Obs_FSolar,aes(x=DAP, y=FSolar, colour=LableCrop),size=3)  #change to Label by Liujun
+    ### uncomment if Obs_Biomass and Obs_Fsolar is given... ###
+    # Obs_Biomass$LableCrop=paste0(Obs_Biomass$Crop,"_",Obs_Biomass$Label)
+    # Obs_FSolar$LableCrop=paste0(Obs_FSolar$Crop,"_",Obs_FSolar$Label)
+    # P3=P1+geom_point(data=Obs_Biomass,aes(x=DAP, y=Biomass, colour=LableCrop),size=3)  #change to Label by Liujun
+    # P4=P2+geom_point(data=Obs_FSolar,aes(x=DAP, y=FSolar, colour=LableCrop),size=3)  #change to Label by Liujun
     
     
     
@@ -134,7 +136,8 @@ gplot=function(Res_Daily,Res_Summary,Obs_Biomass,Obs_FSolar){
     
     
     x11(width=16, height=8)
-    multiplot(P5, P3, P4, cols=3)
-}
+    multiplot(P5, P1, P2, cols=3)
+## replace P1, P2 with P3 and P4 if given data for Biomass and Yield
+    }
 
 
