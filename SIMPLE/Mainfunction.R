@@ -30,7 +30,7 @@ SIMPLE<-function(para,weather,ARID)
   Fsolarmax<-ifelse(is.na(para$treatment$MaxIntercept),0.95,para$treatment$MaxIntercept)
   sowingDate<-para$treatment$SowingDate
   harvestDate<-para$treatment$HarvestDate
-  CO2<-para$treatment$CO2
+  CO2<-as.numeric(para$treatment$CO2)
   water<-para$treatment$Water
   FHarv<-400
   
