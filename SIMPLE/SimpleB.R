@@ -69,7 +69,7 @@ library(plyr)
 library(parallel)
 library(here)
 if(dev.cur()>1){replicate(dev.cur()-1,dev.off())} 
-setwd(script.dir <- dirname(sys.frame(1)$ofile)) #### Relative working directory
+# setwd(script.dir <- dirname(sys.frame(1)$ofile)) #### Relative working directory
 #setwd("/home/philip/Documents/Nextcloud/Uni/Courses/Crop_Systems_Modeling/SIMPLE/SIMPLE_test")  ########Absolute working directory
 source("Mainfunction.R")
 ######weather directory for regional simulation###
@@ -131,18 +131,18 @@ RunModel=function(i){
 }
 
 #Run single experiment. first treatment x = 1
-x = 1
-results = list()
-source("Mainfunction.R")
-res <- RunModel(x)
-results[[x]] <- res
+## x = 1
+## results = list()
+## source("Mainfunction.R")
+## res <- RunModel(x)
+## results[[x]] <- res
 
-observations = list()
-source("Obsfunction.R")
-obs <- ObsInput(x)
-observations[[x]] <- obs
+## observations = list()
+## source("Obsfunction.R")
+## obs <- ObsInput(x)
+## observations[[x]] <- obs
 
-####Run all the experiment one by one
+## Run all the experiment one by one
 x=1:nrow(treatment)
 results=list()
 if(GridsimulationSwitch=='OFF'){observations=list()}
@@ -165,20 +165,20 @@ for (i in 1:length(x)){
 
 
 ########parallel running
-t1=Sys.time() 
-x=1:nrow(treatment)
-no_cores <- detectCores() - 1
-cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
-clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
-results <- parLapply(cl,x,RunModel) 
-if(GridsimulationSwitch=='OFF')
-{
-  source("Obsfunction.R")
-  observations<- parLapply(cl,x,ObsInput) 
-}
+## t1=Sys.time()
+## x=1:nrow(treatment)
+## no_cores <- detectCores() - 1
+## cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
+## clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
+## results <- parLapply(cl,x,RunModel)
 
-stopCluster(cl)
-Sys.time()-t1
+## if(GridsimulationSwitch=='OFF'){
+##   source("Obsfunction.R")
+##   observations<- parLapply(cl,x,ObsInput)
+## }
+
+## stopCluster(cl)
+## Sys.time()-t1
 ###########
 
 #########Simulation results reorganization
@@ -187,7 +187,7 @@ Res_daily=ldply(res.df[,1])
 Res_summary=ldply(res.df[,2])
 
 
-if(GridsimulationSwitch=='OFF'){
+# if(GridsimulationSwitch=='OFF'){
   obs.df=do.call('rbind',observations)
   Obs_Biomass=ldply(obs.df[,1])
   Obs_FSolar=ldply(obs.df[,2])
@@ -207,32 +207,30 @@ if(GridsimulationSwitch=='OFF'){
   
   
   
-}else{
-  treatmentsub=treatmentsingle[,c('Exp.','Species.','Trt.','row','col','lat')]
-  Res_summary=Res_summary[,c("Exp","SowingDate","Duration","Biomass","Yield","MaturityDay")]
-  Res_Summary=merge(treatmentsub,Res_summary,by.x="Exp.",by.y = "Exp")
-  Yeargap=paste(unique(format(Res_Summary$MaturityDay,"%Y")),collapse = "_")
-  if(DailyOutputforgridcell=='ON'){
-    write.table(Res_daily,paste("./Output/Gridcell_daily_",Res_Summary$Species.[1],"_",Yeargap,".csv",sep=""),col.names=TRUE,row.name=FALSE,sep=",")
-  }
-  Res_Summary$MaturityYear=substr(Res_Summary$MaturityDay,1,4)
-  write.csv(Res_Summary,paste0("./Output/Gridcell_summary",Res_Summary$Species.[1],"_",Yeargap,".csv"),row.names = F)
-  
-  Res_SummaryMap=Res_Summary[Res_Summary$MaturityYear==MapoutputYear,]
-    
-  source("MapPlot.R")
-  
-  
-  Worldcountry=readRDS(file = "./Input/Map/Worldcountry.rds")
-  Worldstate=readRDS(file = "./Input/Map/ne_10m_admin_1_states_provinces.rds")
-  
-  
-  if(MapExtention=="World"){
-    WMap <- Worldcountry
-  }else{WMap<-Worldstate[Worldstate@data$admin==MapExtention,]
-  WMap<- subset(WMap,!fips %in% c("US02", "US15", "US72"))}
-  
-  MapPlot(Res_SummaryMap,index="Yield",WMap,MapExtention,Title="Potato_Yield",Unit="Yield(kg/ha)")
-}
+# }else{
+##   treatmentsub=treatmentsingle[,c('Exp.','Species.','Trt.','row','col','lat')]
+##   Res_summary=Res_summary[,c("Exp","SowingDate","Duration","Biomass","Yield","MaturityDay")]
+##   Res_Summary=merge(treatmentsub,Res_summary,by.x="Exp.",by.y = "Exp")
+##   Yeargap=paste(unique(format(Res_Summary$MaturityDay,"%Y")),collapse = "_")
+##   if(DailyOutputforgridcell=='ON'){
+##     write.table(Res_daily,paste("./Output/Gridcell_daily_",Res_Summary$Species.[1],"_",Yeargap,".csv",sep=""),col.names=TRUE,row.name=FALSE,sep=",")
+##   }
+##   Res_Summary$MaturityYear=substr(Res_Summary$MaturityDay,1,4)
+##   write.csv(Res_Summary,paste0("./Output/Gridcell_summary",Res_Summary$Species.[1],"_",Yeargap,".csv"),row.names = F)
+
+##   Res_SummaryMap=Res_Summary[Res_Summary$MaturityYear==MapoutputYear,]
+
+##   source("MapPlot.R")
 
 
+##   Worldcountry=readRDS(file = "./Input/Map/Worldcountry.rds")
+##   Worldstate=readRDS(file = "./Input/Map/ne_10m_admin_1_states_provinces.rds")
+
+
+##   if(MapExtention=="World"){
+##     WMap <- Worldcountry
+##   }else{WMap<-Worldstate[Worldstate@data$admin==MapExtention,]
+##   WMap<- subset(WMap,!fips %in% c("US02", "US15", "US72"))}
+
+##   MapPlot(Res_SummaryMap,index="Yield",WMap,MapExtention,Title="Potato_Yield",Unit="Yield(kg/ha)")
+## }
