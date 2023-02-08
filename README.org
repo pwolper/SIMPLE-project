@@ -42,20 +42,20 @@ The SIMPLE model is calibrated with for this data. Optimal conditions (no diseas
 
 Experimental Data:
 
-| Year | Location      | Trt | Water | Name                 |
-| 2018 | Rio Paranaiba |   1 | no    | RIOPA_18_irrigated   |
-| 2019 | Rio Paraneiba |   2 | no    | RIOPA_19_irrigated   |
-| 2019 | Vicosa        |   3 | no    | VICO_19_irrigated    |
-| 2020 | Vicosa        |   4 | no    | VICO_20_irrigated    |
-| 2020 | Vicosa        |   5 | yes   | VICO_20_nonirrigated |
-| 2021 | Vicosa        |   6 | no    | VICO_21_irrigated    |
-| 2020 | Sao Gotardo   |   7 | no    | SOAG_20_irrigated    |
-| 2020 | Sao Gotardo   |   8 | yes   | SOAG_20_nonirrigated |
-| 2021 | Sao Gotardo   |   9 | no    | SOAG_21_irrigated    |
-| 2021 | Sao Gotardo   |  10 | yes   | SOAG_21_nonirrigated |
-| 2022 | Sao Gotardo   |  11 | yes   | SOAG_22_nonirrigated |
-| 2020 | Sete Lagoas   |  12 | no    | SETE_20_irrigated    |
-| 2021 | Itutinga      |  13 | yes   | ITUT_21_nonirrigated |
+| Year | Location      | Trt | Water | Name                 | status  |
+| 2018 | Rio Paranaiba |   1 | no    | RIOPA_18_irrigated   | works   |
+| 2019 | Rio Paraneiba |   2 | no    | RIOPA_19_irrigated   | missing |
+| 2019 | Vicosa        |   3 | no    | VICO_19_irrigated    | works   |
+| 2020 | Vicosa        |   4 | no    | VICO_20_irrigated    | works   |
+| 2020 | Vicosa        |   5 | yes   | VICO_20_nonirrigated |         |
+| 2021 | Vicosa        |   6 | no    | VICO_21_irrigated    | works   |
+| 2020 | Sao Gotardo   |   7 | no    | SAOG_20_irrigated    | works   |
+| 2020 | Sao Gotardo   |   8 | yes   | SAOG_20_nonirrigated |         |
+| 2021 | Sao Gotardo   |   9 | no    | SAOG_21_irrigated    | works   |
+| 2021 | Sao Gotardo   |  10 | yes   | SAOG_21_nonirrigated |         |
+| 2022 | Sao Gotardo   |  11 | yes   | SAOG_22_nonirrigated |         |
+| 2020 | Sete Lagoas   |  12 | no    | SETE_20_irrigated    | works   |
+| 2021 | Itutinga      |  13 | yes   | ITUT_21_nonirrigated |         |
 
 Plot the locations on a map? Using cartopleth package or similar. Check out rgraph gallery for inspiration.
 
@@ -63,6 +63,8 @@ Plot the locations on a map? Using cartopleth package or similar. Check out rgra
 Simulate wheat in Cerrado. How much wheat do we really get?
 
 How will we calibrate? Using subsets of the data? Sensitivity Analysis?
+
+Ideas: Show the results of the simulation by location if it is easier to interpret. Or by year. Potentially in a matrix?
 
 _First Model simulation, 30.01.23_
 Using RIOPA_2018 the model simulates an actual yield very close to that measured RMSE = 2,5%
@@ -86,6 +88,7 @@ from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/c
 On Soil Pyramid: Sandy loam1 or similar?
 
 *** Pedotransfer equations.
+Can we use them for more exact soil modeling?
 
 * Model Application
 Relevant data to run the simple model in a chosen condition and context of a hypothesis.
@@ -93,10 +96,21 @@ Relevant data to run the simple model in a chosen condition and context of a hyp
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 
 Worth reading:
-de Souza Noia Junior et al. 2021 ERL.
+- Junior, R. d. S. N., Martre, P., Finger, R., Velde, M. v. d., Ben-Ari, T.,
+  Ewert, F., Webber, H., … (2021). Extreme lows of wheat production in brazil.
+  Environmental Research Letters, 16(10), 104025.
+  http://dx.doi.org/10.1088/1748-9326/ac26f3
 
-** RCP85 CLimate Prediction
+
+** RCP85 Climate Prediction
 
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.
 Why does out simulation fail in some places? Can we explain it with weather or possibly other reasons?
+
+*** Plot of the outlier location weather data.
+compare to weather during good prediction season.
+
+**** Outlier location
+Overestimation of Simulation to observed yield:
+- SAOG_20_nonirrigated: *strong overestimation*
