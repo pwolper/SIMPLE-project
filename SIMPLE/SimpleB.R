@@ -127,8 +127,7 @@ RunModel=function(i){
   source("Mainfunction.R")
   paras=ParaInput(i)
   res<-tryCatch({SIMPLE(para=paras[c(1:3)],weather=paras$weather,ARID=paras$ARID)},error=function(e){cat("ERROR :",conditionMessage(e),"\n")})
-  return(res)
-}
+  return(res)}
 
 #Run single experiment. first treatment x = 1
 ## x = 1
