@@ -47,19 +47,19 @@ The SIMPLE model is calibrated with for this data. Optimal conditions (no diseas
 Experimental Data:
 
 | Year | Location      | Trt | Water | Name                 |
-| 2018 | Rio Paranaiba |     | no    | RIOPA_18_irrigated   |
-| 2019 | Rio Paraneiba |     | no    | RIOPA_19_irrigated   |
-| 2019 | Vicosa        |     | no    | VICO_19_irrigated    |
-| 2020 | Vicosa        |     | no    | VICO_20_irrigated    |
-| 2020 | Vicosa        |     | yes   | VICO_20_nonirrigated |
-| 2021 | Vicosa        |     | no    | VICO_21_irrigated    |
-| 2020 | Sao Gotardo   |     | no    | SOAG_20_irrigated    |
-| 2020 | Sao Gotardo   |     | yes   | SOAG_20_nonirrigated |
-| 2021 | Sao Gotardo   |     | no    | SOAG_21_irrigated    |
-| 2021 | Sao Gotardo   |     | yes   | SOAG_21_nonirrigated |
-| 2022 | Sao Gotardo   |     | yes   | SOAG_22_nonirrigated |
-| 2020 | Sete Lagoas   |     | no    | SETE_20_irrigated    |
-| 2021 | Itutinga      |     | yes   | ITUT_21_nonirrigated |
+| 2018 | Rio Paranaiba |   1 | no    | RIOPA_18_irrigated   |
+| 2019 | Rio Paraneiba |   2 | no    | RIOPA_19_irrigated   |
+| 2019 | Vicosa        |   3 | no    | VICO_19_irrigated    |
+| 2020 | Vicosa        |   4 | no    | VICO_20_irrigated    |
+| 2020 | Vicosa        |   5 | yes   | VICO_20_nonirrigated |
+| 2021 | Vicosa        |   6 | no    | VICO_21_irrigated    |
+| 2020 | Sao Gotardo   |   7 | no    | SOAG_20_irrigated    |
+| 2020 | Sao Gotardo   |   8 | yes   | SOAG_20_nonirrigated |
+| 2021 | Sao Gotardo   |   9 | no    | SOAG_21_irrigated    |
+| 2021 | Sao Gotardo   |  10 | yes   | SOAG_21_nonirrigated |
+| 2022 | Sao Gotardo   |  11 | yes   | SOAG_22_nonirrigated |
+| 2020 | Sete Lagoas   |  12 | no    | SETE_20_irrigated    |
+| 2021 | Itutinga      |  13 | yes   | ITUT_21_nonirrigated |
 
 Plot the locations on a map? Using cartopleth package or similar. Check out rgraph gallery for inspiration.
 
