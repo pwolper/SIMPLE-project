@@ -27,18 +27,14 @@ _Data necessary to run the SIMPLE model:_
   - /dataset-BRS_264-MN-1209.xlsx/ - Expermimental crop from locations.
 
 ** Data files to use:
-*** [ ] Cultivar.csv
-Which cultivar to use? Yecorea Rojo? Batten? Possibly other?
-*** [ ] Species Parameters.csv
-Species parameters already set! Test sensitivity.
-*** [ ] Irrigation.csv
-What amount of water is irrigated? What means dry? What data can we supply for the Irrigation.csv?
-*** [ ] Soil.csv
-Which soil can we use? Firgure out the soil characteristics of soil in the Brazilian Cerrado and compare to soils found in soil.csv
-*** [ ] Treatment.csv
-Fill out the treatment information. InitialBio? InitialFsolar? InitialTT?
-*** [ ] Simulation managment.csv
-
+- Species Parameters.csv
+- Cultivar.csv
+  Species parameters already set! Test sensitivity.
+- Soil.csv
+  Which soil can we use? Firgure out the soil characteristics of soil in the Brazilian Cerrado and compare to soils found in soil.csv
+- Treatment.csv
+- Simulation managment.csv
+To turn on and off simulations.
 
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
@@ -63,23 +59,6 @@ Experimental Data:
 
 Plot the locations on a map? Using cartopleth package or similar. Check out rgraph gallery for inspiration.
 
-** Soil
-Either take soils from the simple model. Research which soil would be the best.
-
-Or use online data to estimate parameters ourselves.
-eg. AWC = (FC - WP)/10 * BD
-[FC WP] - Estimation from soil texture.
-% Clay Sand % pedotransfer equation
-
-Soil: sand should be chosen
-
-_Soil content in the Cerrado:_
-- median percentage:
-  Sand, Silt, Clay : 48.6, 15.3, 33.5
-from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/cerrado-soils
-
-On Soil Pyramid: Sandy loam1 or similar?
-
 *  Calibration of the SIMPLE model with wheat data from the /Cerrado/ in Brazil
 Simulate wheat in Cerrado. How much wheat do we really get?
 
@@ -88,12 +67,36 @@ How will we calibrate? Using subsets of the data? Sensitivity Analysis?
 _First Model simulation, 30.01.23_
 Using RIOPA_2018 the model simulates an actual yield very close to that measured RMSE = 2,5%
 
+** Cultivar
+Parameters to use for calibration. S_WATER (initially 0.4, changed to what?)
+
+** Soil
+Either take soils from the simple model. Research which soil would be the best.
+
+Or use online data to estimate parameters ourselves.
+eg. AWC = (FC - WP)/10 * BD
+[FC WP] - Estimation from soil texture.
+% Clay Sand % pedotransfer equation
+
+_Soil content in the Cerrado:_
+- median percentage:
+  Sand, Silt, Clay : 48.6, 15.3, 33.5
+from:https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/cerrado-soils
+
+On Soil Pyramid: Sandy loam1 or similar?
+
+*** Pedotransfer equations.
+
 * Model Application
-relevant data to run the simple model in a chosen condition and context of a hypothesis.
+Relevant data to run the simple model in a chosen condition and context of a hypothesis.
 
 Application to climatic scenarios from IPCC. WHat happens with the wheat yield.
 
 Worth reading:
 de Souza Noia Junior et al. 2021 ERL.
+
+** RCP85 CLimate Prediction
+
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.
+Why does out simulation fail in some places? Can we explain it with weather or possibly other reasons?
