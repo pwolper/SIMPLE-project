@@ -1,17 +1,17 @@
 ON_Off;Species*;Exp*;Trt*;Label;Water;NOTE
 1;wheat;BRS264;1;RIOPA_18_irrigated;no;RIOPA_18_irrigated
-1;wheat;BRS264;2;RIOPA_19_irrigated;no;RIOPA_19_irrigated
+0;wheat;BRS264;2;RIOPA_19_irrigated;no;RIOPA_19_irrigated
 1;wheat;BRS264;3;VICO_19_irrigated;no;VICO_19_irrigated
 1;wheat;BRS264;4;VICO_20_irrigated;no;VICO_20_irrigated
-0;wheat;BRS264;5;VICO_20_nonirrigated;yes;VICO_20_nonirrigated
+1;wheat;BRS264;5;VICO_20_nonirrigated;yes;VICO_20_nonirrigated
 1;wheat;BRS264;6;VICO_21_irrigated;no;VICO_21_irrigated
 1;wheat;BRS264;7;SAOG_20_irrigated;no;SAOG_20_irrigated
-0;wheat;BRS264;8;SAOG_20_nonirrigated;yes;SAOG_20_nonirrigated
+1;wheat;BRS264;8;SAOG_20_nonirrigated;yes;SAOG_20_nonirrigated
 1;wheat;BRS264;9;SAOG_21_irrigated;no;SAOG_21_irrigated
-0;wheat;BRS264;10;SAOG_21_nonirrigated;yes;SAOG_21_nonirrigated
-0;wheat;BRS264;11;SAOG_22_nonirrigated;yes;SAOG_22_nonirrigated
+1;wheat;BRS264;10;SAOG_21_nonirrigated;yes;SAOG_21_nonirrigated
+1;wheat;BRS264;11;SAOG_22_nonirrigated;yes;SAOG_22_nonirrigated
 1;wheat;BRS264;12;SETE_20_irrigated;no;SELAG_20_irrigated
-0;wheat;BRS264;13;ITUT_21_nonirrigated;yes;ITUT_21_nonirrigated
+1;wheat;BRS264;13;ITUT_21_nonirrigated;yes;ITUT_21_nonirrigated
 0;wheat;FACE95;1;Full_irri-Normal CO2;yes;Trt2
 0;wheat;FACE95;2;Full_irri-High CO2;yes;Trt4
 0;wheat;FACE92;1;Dry_Normal CO2;yes;Trt1
