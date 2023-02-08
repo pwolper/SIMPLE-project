@@ -5,11 +5,11 @@ wheat;BRS264;3;VICO_19_irrigated;VICO_19_IR;420;19161;19283;Sandy loam1;Batten;0
 wheat;BRS264;4;VICO_20_irrigated;VICO_20_IR;420;20162;20286;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_20_irrigated
 wheat;BRS264;5;VICO_20_nonirrigated;VICO_20_NON;420;20168;20289;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_20_nonirrigated
 wheat;BRS264;6;VICO_21_irrigated;VICO_21_IR;420;21174;21298;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_21_irrigated
-wheat;BRS264;7;SAOG_20_irrigated;SOAG_20_IR;420;20198;20315;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_20_irrigated
-wheat;BRS264;8;SAOG_20_nonirrigated;SOAG_20_NON;420;20090;20212;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_20_nonirrigated
-wheat;BRS264;9;SAOG_21_irrigated;SOAG_21_IR;420;21116;21245;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_21_irrigated
+wheat;BRS264;7;SAOG_20_irrigated;SAOG_20_IR;420;20198;20315;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_20_irrigated
+wheat;BRS264;8;SAOG_20_nonirrigated;SAOG_20_NON;420;20090;20212;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_20_nonirrigated
+wheat;BRS264;9;SAOG_21_irrigated;SAOG_21_IR;420;21116;21245;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_21_irrigated
 wheat;BRS264;10;SAOG_21_nonirrigated;SAOG_21_NON;420;21088;21214;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_21_nonirrigated
-wheat;BRS264;11;SAOG_22_nonirrigated;SOAG_22_NON;420;22089;22214;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_22_nonirrigated
+wheat;BRS264;11;SAOG_22_nonirrigated;SAOG_22_NON;420;22089;22214;Sandy loam1;Batten;0;0.95;1;0;0.001;SAOG_22_nonirrigated
 wheat;BRS264;12;SETE_20_irrigated;SELAG_20_IR;420;20198;20315;Sandy loam1;Batten;0;0.95;1;0;0.001;SETE_20_irrigated
 wheat;BRS264;13;ITUT_21_nonirrigated;ITUT_21_NON;420;21123;21237;Sandy loam1;Batten;0;0.95;1;0;0.001;ITUT_21_nonirrigated
 wheat;FACE95;1;Full_irri-Normal CO2;MAR29601;350;95355;;Loamy sand1;Yecora Rojo;2;0.95;1;0;0.001;Trt2
