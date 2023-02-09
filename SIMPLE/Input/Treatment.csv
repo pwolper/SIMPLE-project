@@ -1,6 +1,6 @@
 Species*;Exp*;Trt*;Label;Weather;CO2;SowingDate;HarvestDate;SoilName*;Cultivar*;IrrigationTrt;MaxIntercept;InitialBio;InitialTT;InitialFsolar;NOTE
 wheat;BRS264;1;RIOPA_18_irrigated;RIOPA_18_IR;420;18122;18255;Sandy loam1;Batten;0;0.95;1;0;0.001;RIOPA_18_irrigated
-wheat;BRS264;2;RIOPA_19_irrigated;RIOPA_19_IR;420;19129;19253;Sandy loam1;Batten;0;0.95;1;0;0.001;RIOPA_19_irrigated
+wheat;BRS264;2;RIOPA_19_irrigated;RIOPA_19_IR;420;19122;19248;Sandy loam1;Batten;0;0.95;1;0;0.001;RIOPA_19_irrigated
 wheat;BRS264;3;VICO_19_irrigated;VICO_19_IR;420;19161;19283;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_19_irrigated
 wheat;BRS264;4;VICO_20_irrigated;VICO_20_IR;420;20162;20286;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_20_irrigated
 wheat;BRS264;5;VICO_20_nonirrigated;VICO_20_NON;420;20168;20289;Sandy loam1;Batten;0;0.95;1;0;0.001;VICO_20_nonirrigated
