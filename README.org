@@ -11,11 +11,10 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 3. Application --> *plots*
 
 * Running Tasks
-- [X] Download weather data from NASA power of all locations.
-- [ ] Get the model running with experimental data
-- [-] Merge experimental data for Cerrado with /SIMPLE/Input/.
-- [X] Get soil data
-
+- [ ] finish calibration
+- [ ] plot outlier weather data, compare them to experiment with good predition.
+- [ ] Find out more information about the experimental setup, ie. fungal inoculations we dont't know about
+- [ ]
 * Data
 _Data necessary to run the SIMPLE model:_
 - weather (download from NASA)
@@ -42,32 +41,48 @@ The SIMPLE model is calibrated with for this data. Optimal conditions (no diseas
 
 Experimental Data:
 
-| Year | Location      | Trt | Water | Name                 | status  |
-| 2018 | Rio Paranaiba |   1 | no    | RIOPA_18_irrigated   | works   |
-| 2019 | Rio Paraneiba |   2 | no    | RIOPA_19_irrigated   | missing |
-| 2019 | Vicosa        |   3 | no    | VICO_19_irrigated    | works   |
-| 2020 | Vicosa        |   4 | no    | VICO_20_irrigated    | works   |
-| 2020 | Vicosa        |   5 | yes   | VICO_20_nonirrigated |         |
-| 2021 | Vicosa        |   6 | no    | VICO_21_irrigated    | works   |
-| 2020 | Sao Gotardo   |   7 | no    | SAOG_20_irrigated    | works   |
-| 2020 | Sao Gotardo   |   8 | yes   | SAOG_20_nonirrigated |         |
-| 2021 | Sao Gotardo   |   9 | no    | SAOG_21_irrigated    | works   |
-| 2021 | Sao Gotardo   |  10 | yes   | SAOG_21_nonirrigated |         |
-| 2022 | Sao Gotardo   |  11 | yes   | SAOG_22_nonirrigated |         |
-| 2020 | Sete Lagoas   |  12 | no    | SETE_20_irrigated    | works   |
-| 2021 | Itutinga      |  13 | yes   | ITUT_21_nonirrigated |         |
+| Year | Location       | Trt | Water | Name                 | status  |
+| 2018 | Rio Paranaiba  |   1 | no    | RIOPA_18_irrigated   | works   |
+| 2019 | Rio Paraneiba  |   2 | no    | RIOPA_19_irrigated   | missing |
+| 2019 | Vicosa         |   3 | no    | VICO_19_irrigated    | works   |
+| 2020 | Vicosa         |   4 | no    | VICO_20_irrigated    | works   |
+| 2020 | Vicosa         |   5 | yes   | VICO_20_nonirrigated |         |
+| 2021 | Vicosa         |   6 | no    | VICO_21_irrigated    | works   |
+| 2020 | Sao Gotardo    |   7 | no    | SAOG_20_irrigated    | works   |
+| 2020 | Sao Gotardo*   |   8 | yes   | SAOG_20_nonirrigated |         |
+| 2021 | Sao Gotardo    |   9 | no    | SAOG_21_irrigated    | works   |
+| 2021 | Sao Gotardo(*) |  10 | yes   | SAOG_21_nonirrigated |         |
+| 2022 | Sao Gotardo(*) |  11 | yes   | SAOG_22_nonirrigated |         |
+| 2020 | Sete Lagoas    |  12 | no    | SETE_20_irrigated    | works   |
+| 2021 | Itutinga       |  13 | yes   | ITUT_21_nonirrigated |         |
 
-Plot the locations on a map? Using cartopleth package or similar. Check out rgraph gallery for inspiration.
+*according to Casagrande et al. 2023, this location was inoculated with blast fungus.
+
+Information to the experiments can be found here:
+[[cite:&casagrande-2023-new-brazil]]
+
+Casagrande, C. R., Mezzomo, H. C., Santos, C. V. d., Sousa, D. J. P. s.,
+Yamanaka, C. H., Olivoto, T., Kaio Olimpio das Gra\ccas Dias, … (2023). New
+agricultural wheat frontier in brazil: envirotypes applied in the adaptability
+and stability of wheat genotypes in contrasting environments.
+http://dx.doi.org/10.21203/rs.3.rs-2415885/v1
 
 *  Calibration of the SIMPLE model with wheat data from the /Cerrado/ in Brazil
 Simulate wheat in Cerrado. How much wheat do we really get?
 
-How will we calibrate? Using subsets of the data? Sensitivity Analysis?
-
 Ideas: Show the results of the simulation by location if it is easier to interpret. Or by year. Potentially in a matrix?
 
-_First Model simulation, 30.01.23_
-Using RIOPA_2018 the model simulates an actual yield very close to that measured RMSE = 2,5%
+Values adjusted during calibration:
+| Paramter | initial | new | dRRMSE | RRMSE_new |
+| S_WATER  |     0.4 | 0.7 |  -3.5% |     56.2% |
+|          |         |     |        |           |
+
+** Current Parameters:
+Cultivar: BRS_264 [2150 | 0.33 | 450 | 250]
+
+S_Water: 0.4
+** Parameters that could be adusted
+- Tbase. Casagrande et al. used 5 degrees celcius?
 
 ** Cultivar
 Parameters to use for calibration. S_WATER (initially 0.4, changed to what?)
@@ -101,9 +116,6 @@ Worth reading:
   Environmental Research Letters, 16(10), 104025.
   http://dx.doi.org/10.1088/1748-9326/ac26f3
 
-
-** RCP85 Climate Prediction
-
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.
 Why does out simulation fail in some places? Can we explain it with weather or possibly other reasons?
@@ -113,4 +125,13 @@ compare to weather during good prediction season.
 
 **** Outlier locations
 Overestimation of Simulation to observed yield:
-- SAOG_20_nonirrigated: *strong overestimation*
+
+Top 3 outliers:
+1. SAOG_20_nonirrigated: *overestimation*
+2. SAOG_21_nonirrigated: *overestimation*
+3. SETE_20_irrigated: *overestimation*
+
+Blast Fungus inocultation for SAOG_21/22_nonirrigated as well? Was the non-irrigated experiment in Sao Gotardo always inoculated with fungi?
+What happend for Sete Lagos? Different weather that year?
+
+** RCP85 Climate Prediction
