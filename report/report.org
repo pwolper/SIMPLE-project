@@ -10,6 +10,6 @@
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups?
 
 ** Climate change prediction
-Results of the climate change prediction model using the climate scenarion from rogerio. Do the simulations.
+Work out results for climate change data simulations. Depending on how much time we have.
 
 * Discussion
