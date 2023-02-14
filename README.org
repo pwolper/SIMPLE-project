@@ -10,11 +10,11 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 2. Calibration (stats) --> *plots*
 3. Application --> *plots*
 
-* Running Tasks
+* Running Task
 - [ ] finish calibration
 - [ ] plot outlier weather data, compare them to experiment with good predition.
 - [ ] Find out more information about the experimental setup, ie. fungal inoculations we dont't know about
-- [ ]
+
 * Data
 _Data necessary to run the SIMPLE model:_
 - weather (download from NASA)
