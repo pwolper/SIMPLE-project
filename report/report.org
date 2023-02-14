@@ -1,7 +1,7 @@
 #+title: Simulation of wheat yield in the Cerrado region of Southern Brazil using the SIMPLE crop model
 
 * Introduction
- Testing: Cerrado is a biome in Brazil
+ Testing: Cerrado is a biome in Brazil. The literature files can be found in the folder.
 * Data and Methods
 * Results
 ** Simulated experiments
