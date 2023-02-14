@@ -206,7 +206,7 @@ Res_summary=ldply(res.df[,2])
   
   simName <- "experiments_no_ouliers"
   filename <- paste0("../results/",format(Sys.time(),"%Y-%m-%d_"),simName)
-  ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
+  #ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
   
   
 # }else{
