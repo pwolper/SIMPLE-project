@@ -58,6 +58,7 @@ Experimental Data:
 
 *according to Casagrande et al. 2023, this location was inoculated with blast fungus.
 
+*** Casagrande et al., (2023)
 Information to the experiments can be found here:
 [[cite:&casagrande-2023-new-brazil]]
 
