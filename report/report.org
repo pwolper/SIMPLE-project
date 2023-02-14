@@ -3,7 +3,12 @@
 * Introduction
  Testing: Cerrado is a biome in Brazil. The literature files can be found in the folder.
 * Data and Methods
+Description of the data to go here. Which locations where used?  What where the conditions? Fungal inoculations? How can we sort the data. By locations? Show the map.
 * Results
 ** Simulated experiments
+Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups?
+
 ** Climate change prediction
+Results of the climate change prediction model using the climate scenarion from rogerio. Do the simulations.
+
 * Discussion
