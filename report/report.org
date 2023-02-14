@@ -3,6 +3,8 @@
 * Introduction
  Testing: Cerrado is a biome in Brazil. The literature files can be found in the folder
 * Data and Methods
+** Experimental Data
+** SIMPLE model
 * Results
 ** Simulated experiments
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups?
