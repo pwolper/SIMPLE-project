@@ -14,7 +14,7 @@ For more infromation on how to connect with Git and GitHub from RStudio see /doc
 - [X] Download weather data from NASA power of all locations.
 - [ ] Get the model running with experimental data
 - [-] Merge experimental data for Cerrado with /SIMPLE/Input/.
-- [X] Get soil data
+
 
 * Data
 _Data necessary to run the SIMPLE model:_
