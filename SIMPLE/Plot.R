@@ -136,7 +136,8 @@ gplot=function(Res_Daily,Res_Summary,Obs_Biomass,Obs_FSolar){
     
     
     x11(width=16, height=8)
-    multiplot(P5, P1, P2, cols=3)
+    multiplot(P5)
+    # multiplot(P5, P1, P2, cols=3)
 ## replace P1, P2 with P3 and P4 if given data for Biomass and Yield
     }
 
