@@ -108,6 +108,9 @@ Relevant data to run the simple model in a chosen condition and context of a hyp
 Application to climatic scenarios from IPCC. What happens with the wheat yield.
 Results of the climate change prediction model using the climate scenarion from Rogerio. Do the simulations. Recommended Sowing date from the cultivar paper: Between 10.04 and 31.05. Middle date? How will moving to a later date affect the yield? Maybe try if enough time. Keep in mind when the rainy season is in brazil, since we want to harvest before it. (starts around October-November)
 
+Average grain yield of BRS264:
+In the region of Minas Gerais, Gois, Bahia, Mato Grosso, Distro Federal:
+6,511 kg ha-1.
 Average sowing date used: May 02 (Year, day(121))
 Average harvest date: August 20 (Year, day(232))
 
