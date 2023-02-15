@@ -58,6 +58,8 @@ rm(list=ls())   #### cleans memory - needs to saty here
 GridsimulationSwitch=c('OFF','ON')[1]  
 ########1=single point simulation, 2= Grid cell simulation
 
+########Prediction Model, no observations available#######
+PredictionModel=c('OFF','ON')[2]
 
 ###########load packages######################################################################
 list.of.packages <- c("ggplot2", "plyr","parallel","here") #added installation of here package to manage project directories on different machines.
@@ -144,17 +146,19 @@ RunModel=function(i){
 ## Run all the experiment one by one
 x=1:nrow(treatment)
 results=list()
-if(GridsimulationSwitch=='OFF'){observations=list()}
+if(GridsimulationSwitch=='OFF'){
 for (i in 1:length(x)){
   results[[i]]=list()
   source("Mainfunction.R")
   res=RunModel(x[i])
   results[[i]]<-res
+}
 
-  if(GridsimulationSwitch=='OFF'){
-    source("Obsfunction.R")
-    obs=ObsInput(x[i])
-    observations[[i]]<-obs}
+if(PredictionModel=='OFF'){
+  observations=list()
+  source("Obsfunction.R")
+  obs=ObsInput(x[i])
+  observations[[i]]<-obs}
 }
 
 ##########
@@ -164,21 +168,23 @@ for (i in 1:length(x)){
 
 
 ########parallel running
-## t1=Sys.time()
-## x=1:nrow(treatment)
-## no_cores <- detectCores() - 1
-## cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
-## clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
-## results <- parLapply(cl,x,RunModel)
+t1=Sys.time()
+x=1:nrow(treatment)
+no_cores <- detectCores() - 1
+cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
+clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
+results <- parLapply(cl,x,RunModel)
 
 ## if(GridsimulationSwitch=='OFF'){
 ##   source("Obsfunction.R")
 ##   observations<- parLapply(cl,x,ObsInput)
 ## }
 
-## stopCluster(cl)
-## Sys.time()-t1
+stopCluster(cl)
+Sys.time()-t1
+
 ###########
+
 
 #########Simulation results reorganization
 res.df <- do.call('rbind',results) 
