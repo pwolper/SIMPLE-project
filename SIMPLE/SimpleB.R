@@ -96,7 +96,7 @@ MapoutputYear=2001
 ############  Read inputs - treatments, soil weather, CO2
 if(GridsimulationSwitch=='OFF'){
   management<-read.table("./Input/Simulation Management.csv",header=TRUE,sep=";",stringsAsFactors=FALSE)
-  treatment<-read.table("./Input/Treatment.csv",header=TRUE,sep=";",stringsAsFactors=FALSE);treatment$Species.=tolower(treatment$Species.)
+  treatment<-read.table("./Input/Treatment.csv",header=TRUE,sep=",",stringsAsFactors=FALSE);treatment$Species.=tolower(treatment$Species.)
   cultivar<-read.table("./Input/Cultivar.csv",header=TRUE,sep=",",stringsAsFactors=FALSE);cultivar$Species.=tolower(cultivar$Species.)
   irri<-read.table("./Input/Irrigation.csv",header=TRUE,sep=";",stringsAsFactors=FALSE);irri$Species.=tolower(irri$Species.)
   soil<-read.table("./Input/Soil.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)  
@@ -147,41 +147,35 @@ RunModel=function(i){
 x=1:nrow(treatment)
 results=list()
 if(GridsimulationSwitch=='OFF'){
-for (i in 1:length(x)){
-  results[[i]]=list()
-  source("Mainfunction.R")
-  res=RunModel(x[i])
-  results[[i]]<-res
-}
+  t1 = Sys.time()
+  for (i in 1:length(x)){
+    results[[i]]=list()
+    source("Mainfunction.R")
+    res=RunModel(x[i])
+    results[[i]]<-res}
+  Sys.time() -t1
+}else{}
 
 if(PredictionModel=='OFF'){
   observations=list()
   source("Obsfunction.R")
   obs=ObsInput(x[i])
-  observations[[i]]<-obs}
-}
-
-##########
-
-
-
-
+  observations[[i]]<-obs
+}else{}
 
 ########parallel running
-t1=Sys.time()
-x=1:nrow(treatment)
-no_cores <- detectCores() - 1
-cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
-clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
-results <- parLapply(cl,x,RunModel)
-
-## if(GridsimulationSwitch=='OFF'){
-##   source("Obsfunction.R")
-##   observations<- parLapply(cl,x,ObsInput)
-## }
-
-stopCluster(cl)
-Sys.time()-t1
+## t1=Sys.time()
+## x=1:nrow(treatment)
+## no_cores <- detectCores() - 1
+## cl <- makeCluster(mc <- getOption("cl.cores", no_cores))
+## clusterExport(cl, c("treatment","irri","GridsimulationSwitch","WeatherType","WeatherDir","DailyOutputOutput"))
+## results <- parLapply(cl,x,RunModel)
+## ## if(GridsimulationSwitch=='OFF'){
+## ##   source("Obsfunction.R")
+## ##   observations<- parLapply(cl,x,ObsInput)
+## ## }
+## stopCluster(cl)
+## Sys.time()-t1
 
 ###########
 
@@ -193,6 +187,7 @@ Res_summary=ldply(res.df[,2])
 
 
 # if(GridsimulationSwitch=='OFF'){
+if(PredictionModel=='OFF'){
   obs.df=do.call('rbind',observations)
   Obs_Biomass=ldply(obs.df[,1])
   Obs_FSolar=ldply(obs.df[,2])
@@ -213,8 +208,15 @@ Res_summary=ldply(res.df[,2])
   simName <- "experiments_no_ouliers"
   filename <- paste0("../results/",format(Sys.time(),"%Y-%m-%d_"),simName)
   #ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
-  
-  
+}else{
+  print("Prediction model model simulating crop growth. No observation data available. ")
+  str(Res_summary)
+
+  write.table(Res_summary,"../results/cc-model/CC-model-Simulation.csv",append = TRUE,
+              col.names = FALSE, row.names = FALSE, quote = FALSE, sep = ",")
+  ## Write simulation results to file.
+  ## Plot sumulation results
+}
 # }else{
 ##   treatmentsub=treatmentsingle[,c('Exp.','Species.','Trt.','row','col','lat')]
 ##   Res_summary=Res_summary[,c("Exp","SowingDate","Duration","Biomass","Yield","MaturityDay")]
@@ -241,4 +243,4 @@ Res_summary=ldply(res.df[,2])
 ##   WMap<- subset(WMap,!fips %in% c("US02", "US15", "US72"))}
 
 ##   MapPlot(Res_SummaryMap,index="Yield",WMap,MapExtention,Title="Potato_Yield",Unit="Yield(kg/ha)")
-## }
+  ## }
