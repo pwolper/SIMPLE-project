@@ -114,6 +114,7 @@ In the region of Minas Gerais, Gois, Bahia, Mato Grosso, Distro Federal:
 Average sowing date used: May 02 (Year, day(121))
 Average harvest date: August 20 (Year, day(232))
 
+How does the SIMPLE model determine when the crop is mature?
 
 
 Worth reading:
