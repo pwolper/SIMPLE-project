@@ -59,7 +59,7 @@ GridsimulationSwitch=c('OFF','ON')[1]
 ########1=single point simulation, 2= Grid cell simulation
 
 ########Prediction Model, no observations available#######
-PredictionModel=c('OFF','ON')[2]
+PredictionModel=c('OFF','ON')[1]
 
 ###########load packages######################################################################
 list.of.packages <- c("ggplot2", "plyr","parallel","here") #added installation of here package to manage project directories on different machines.
@@ -146,22 +146,23 @@ RunModel=function(i){
 ## Run all the experiment one by one
 x=1:nrow(treatment)
 results=list()
+observations=list()
 if(GridsimulationSwitch=='OFF'){
   t1 = Sys.time()
   for (i in 1:length(x)){
     results[[i]]=list()
     source("Mainfunction.R")
     res=RunModel(x[i])
-    results[[i]]<-res}
-  Sys.time() -t1
-}else{}
+    results[[i]]<-res
 
-if(PredictionModel=='OFF'){
-  observations=list()
-  source("Obsfunction.R")
-  obs=ObsInput(x[i])
-  observations[[i]]<-obs
-}else{}
+    if(PredictionModel=='OFF'){
+      source("Obsfunction.R")
+      obs=ObsInput(x[i])
+      observations[[i]]<-obs
+    }else{}
+  Sys.time() -t1}
+  }else{}
+
 
 ########parallel running
 ## t1=Sys.time()
@@ -205,9 +206,11 @@ if(PredictionModel=='OFF'){
   source("Plot.R")
   gplot(Res_daily,Res_Summary,Obs_Biomass,Obs_FSolar)
   
-  simName <- "experiments_no_ouliers"
+  simName <- "experiments_all"
   filename <- paste0("../results/",format(Sys.time(),"%Y-%m-%d_"),simName)
-  #ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
+  ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
+  write.csv(Res_Summary,paste0(filename,".csv"),row.names = FALSE,quote = FALSE)
+
 }else{
   print("Prediction model model simulating crop growth. No observation data available. ")
   str(Res_summary)
