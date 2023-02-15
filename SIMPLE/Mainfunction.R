@@ -266,7 +266,7 @@ DOYtoDate=function(DATE)
   YEAR <- as.numeric(substring(DATE,2,4)))
   # YEAR[YEAR>20]<-YEAR[YEAR>20]+1900;
   YEAR<-YEAR+2000
-  DOY=as.numeric(substring(DATE,nchar(DATE)-3,nchar(DATE)))
+  DOY=as.numeric(substring(DATE,nchar(DATE)-2,nchar(DATE)))
   DATE=as.Date(DOY-1, origin = paste0(YEAR,"-01-01"))
   return(DATE)
 }
