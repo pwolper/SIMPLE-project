@@ -261,10 +261,12 @@ ParaInput=function(i)
 DOYtoDate=function(DATE)
 {
   DATE=sprintf("%05d",as.numeric(DATE))
-  YEAR<-as.numeric(substring(DATE,1,2))
+  ifelse(nchar(DATE)==5,
+  YEAR<-as.numeric(substring(DATE,1,2)),
+  YEAR <- as.numeric(substring(DATE,2,4)))
   # YEAR[YEAR>20]<-YEAR[YEAR>20]+1900;
   YEAR<-YEAR+2000
-  DOY=as.numeric(substring(DATE,3,5))
+  DOY=as.numeric(substring(DATE,nchar(DATE)-3,nchar(DATE)))
   DATE=as.Date(DOY-1, origin = paste0(YEAR,"-01-01"))
   return(DATE)
 }
