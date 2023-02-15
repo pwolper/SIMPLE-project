@@ -116,13 +116,6 @@ Average harvest date: August 20 (Year, day(232))
 
 How does the SIMPLE model determine when the crop is mature?
 
-
-Worth reading:
-- Junior, R. d. S. N., Martre, P., Finger, R., Velde, M. v. d., Ben-Ari, T.,
-  Ewert, F., Webber, H., … (2021). Extreme lows of wheat production in brazil.
-  Environmental Research Letters, 16(10), 104025.
-  http://dx.doi.org/10.1088/1748-9326/ac26f3
-
 ** Discussion
 Describe and discuss results. First describe the calibration results. Then continue with application results.
 Why does out simulation fail in some places? Can we explain it with weather or possibly other reasons?
