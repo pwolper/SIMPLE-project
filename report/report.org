@@ -8,6 +8,7 @@ Although not considered a traditional region of cereal production, the Cerrado h
 Hence, the incentivization of the Cerrado in crop production is considered a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may 
 highlight the increasing vulnerability to climate change, which could destabilize crop production in the fulfilment of domestic food demand. 
 
+here is where the second paragraph goes...
 
 * Data and Methods
 ** Experimental Data
