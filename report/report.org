@@ -17,6 +17,7 @@ Information about experimental set ups. Water managment? Nitrogen (eventhough no
 
 * Results
 ** Simulated experiments
+In order to assess the capabilities of the SIMPLE model to model wheat growth in the Cerrado region, we simulated yield for 13 field trials in 5 different locations. The model was calibrated using the following parameters. (insert table here.)
 The SIMPLE model was calibrated by simulating the yield of 13 different field experiments conducted between 2018 and 2022 in the state of Minas Gerais, Brazil. The average
 
 
