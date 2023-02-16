@@ -6,7 +6,7 @@ Overall, the climate of Cerrado region is characterized by the semi humid tropic
 Conventionally, Brazil’s wheat production is dependent on the Southern regions of Brazil, contributing up to 91 % of national production in 2017.
 Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-season from that of the Southern regions. 
 Hence, the incentivization of the Cerrado in crop production is considered a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may 
-highlight the increasing vulnerability to climate change, which destabilize of crop production to fulfil the demands of domestic consumption. 
+highlight the increasing vulnerability to climate change, which could destabilize crop production in the fulfilment of domestic food demand. 
 
 
 * Data and Methods
@@ -17,9 +17,6 @@ Information about experimental set ups. Water managment? Nitrogen (eventhough no
 
 * Results
 ** Simulated experiments
-The SIMPLE model was calibrated by simulating the yield of 13 different field experiments conducted between 2018 and 2022 in the state of Minas Gerais, Brazil. The average
-
-
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups? What was done during calibration?
 
 ** Climate change prediction
