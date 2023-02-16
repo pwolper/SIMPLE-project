@@ -29,7 +29,6 @@ We also observe that the accuracy of predicting yield varies between locations, 
 
 (add some location-specific model statistics. Only for Vicosa?)
 
-
 ** Climate change prediction
 Work out results for climate change data simulations. Depending on how much time we have.
 
