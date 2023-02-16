@@ -1,12 +1,7 @@
 #+title: Simulation of wheat yield in the Cerrado region of Southern Brazil using the SIMPLE crop model
 
 * Introduction
-The Cerrado region of Brazil refers to the tropical savanna biomes that are widely distributed in the Eastern states of the country. 
-Overall, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually. 
-Conventionally, Brazil’s wheat production is dependent on the Southern regions of Brazil, contributing up to 91 % of national production in 2017.
-Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-season from that of the Southern regions. 
-Hence, the incentivization of the Cerrado in crop production is considered a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may 
-highlight the increasing vulnerability to climate change, which could destabilize crop production in the fulfilment of domestic food demand. 
+The Cerrado region of Brazil refers to the tropical savanna biomes that are widely distributed in the Eastern states of the country. Overall, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually. Conventionally, Brazil’s wheat production is dependent on the Southern regions of Brazil, contributing up to 91 % of national production in 2017. Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-season from that of the Southern regions. Hence, the incentivization of the Cerrado in crop production is considered a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to climate change, which could destabilize crop production in the fulfilment of domestic food demand.
 
 here is where the second paragraph goes...
 
