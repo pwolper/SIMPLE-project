@@ -13,17 +13,17 @@ Information about experimental set ups. Water managment? Nitrogen (eventhough no
 
 * Results
 ** Simulated experiments
-In order to assess the capabilities of the SIMPLE model to model wheat growth in the Cerrado region, we simulated yield for 13 field trials in 5 different locations. Irrigated location where simulated with no water stress, implying a perfect watering routine. Nonirrigated crops had water stress turned on and relied only on rainfalls, supplied in the weather data. Since no nutrients are simulated in the SIMPLE model, we assume perfect nutrient saturation of the crops, a state not uncommon for field trials. The atmospheric CO2 concentration was set to 415 ppm, reflecting the current value as of 2020.
-The model parameters were derived from literature or estimated. (cite zhao et al.) Further calibrated was done by adjusting cultivar parameters (Tsum, I50A, I50B and HI) in reasonable levels.
+In order to assess the capabilities of the SIMPLE model to model wheat growth in the Cerrado region, we simulated yield for 13 field trials in 5 different locations. Irrigated location where simulated with no water stress, implying a perfect watering routine. Nonirrigated crops had water stress turned on and relied only on rainfalls, supplied in the weather data. Since no nutrients are simulated in the SIMPLE model, we assume perfect nutrient saturation of the crops, a state not uncommon for field trials. The atmospheric CO2 concentration was set to 415 ppm, reflecting the current value as of 2020. Soil parameters were estimated from the content of Silt, Clay and Sand found in typical Cerrado soils (*cite soils*)
+
+The model parameters were derived from literature or estimated. (*cite zhao et al.*) Further calibrated was done by adjusting cultivar parameters (Tsum, I50A, I50B and HI) in reasonable levels.
 
 (insert table here.)
 
 The results of the simulation across experiments are shown in (Figure calibration). The model has an accuracy of: (statistics here.)
 
-The first thing one can note about the results is that in many cases there is significant deviation between the simulated and observed yield. While several experiments are accurately simulated, a general trend of the simulation to significantly overestimates the observed yield can be observed. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for. Therefore we should not be surprised by the systematic overestimation of yield.
+The first thing one can note about the results is that in many cases there is significant deviation between the simulated and observed yield. While several experiments are accurately simulated, a general trend of the simulation to significantly overestimates the observed yield can be observed. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for.
 
-We also observe that the accuracy of predicting yield varies between locations, as can  be expected between differing environments. It can be seen, that experiments conducted in Vicosa, MG have the best simulated results of all 5 locations. On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which also have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, by grossly overestimating the yield in the simulation. The inability of the SIMPLE model to predict the the yield accurately in this case is again due its simplicity, as pest and diseases are among the factors not accounted for.
-
+We also observe that the accuracy of predicting yield varies between locations, as can  be expected between differing environments. It can be seen, that experiments conducted in Vicosa, MG have the best simulated results of all 5 locations. On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which also have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, by grossly overestimating the yield in the simulation. This discrepancy is likely caused by the fungal pathogen having a negative effect on the yield, which is not accounted for by the model.
 
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups? What was done during calibration?
 
