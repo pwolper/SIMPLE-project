@@ -35,6 +35,8 @@ _Data necessary to run the SIMPLE model:_
 - Simulation managment.csv
 To turn on and off simulations.
 
+[[cite:&zhao-2019-simpl-crop-model]]
+
 ** Experimental Data
 The SIMPLE model is calibrated with for this data. Optimal conditions (no disease, pest, nutrient deficiency)
 = Cultivar and species parameters (When adjusting do so in respective order)
