@@ -19,15 +19,16 @@ The species and cultivar parameters required by the SIMPLE mode were derived fro
 
 (insert table here.)
 
-The results of the simulation across experiments are shown in (Figure calibration). The model has an accuracy of: (statistics here.)
+The results of the simulation across experiments are shown in (Figure calibration). The model has an accuracy of:
+
+(statistics here.)
 
 The first thing one can note about the results is that in many cases there is significant deviation between the simulated and observed yield. While several experiments are accurately simulated, a general trend of the simulation to significantly overestimates the observed yield can be observed. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for.
 
 We also observe that the accuracy of predicting yield varies between locations, as can  be expected between differing environments. It can be seen, that experiments conducted in Vicosa, MG have the best simulated results of all 5 locations. On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which also have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, by grossly overestimating the yield in the simulation. This discrepancy is likely caused by the fungal pathogen having a negative effect on the yield, which is not accounted for by the model.
 
-(add some location-specific model statistics.)
+(add some location-specific model statistics. Only for Vicosa?)
 
-Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups? What was done during calibration?
 
 ** Climate change prediction
 Work out results for climate change data simulations. Depending on how much time we have.
