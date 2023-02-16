@@ -11,6 +11,9 @@ Information about experimental set ups. Water managment? Nitrogen (eventhough no
 
 * Results
 ** Simulated experiments
+The SIMPLE model was calibrated by simulating the yield of 13 different field experiments conducted between 2018 and 2022 in the state of Minas Gerais, Brazil. The average
+
+
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups? What was done during calibration?
 
 ** Climate change prediction
