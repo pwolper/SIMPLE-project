@@ -22,6 +22,10 @@ In order to assess the capabilities of the SIMPLE model to model wheat growth in
 
 The results of the simulation across experiments are shown in (Figure calibration). The model has an accuracy of: (statistics here.)
 
+The first thing one can note about the results is that the SIMPLE model has limitations to simulate the observed yield in many cases. While a few experiments are accurately simulated, many times the simulation significantly overestimates the observed yield. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for. Therefore we should not be surprised by the systematic overestimation of yield.
+
+We also observe, that the accuracy of predicting yield varies between locations, as can  be expected between differing environments. It can be seen, that experiments conducted in Vicosa, MG have the best simulated results of all 5 locations. On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which also have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, by grossly overestimating the yield in the simulation. The inability of the SIMPLE model to predict the the yield accurately in this case is again due its simplicity, as pest ans diseases are among the factors not accounted for.
+
 
 Calibration of model with the obserevd data from the experiments. What locations worked well, which ones did not work so well? Results by groups? What was done during calibration?
 
