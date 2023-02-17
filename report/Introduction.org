@@ -5,9 +5,9 @@ In general, the climate of Cerrado region is characterized by the semi humid tro
 Conventionally, Brazil’s wheat production is distributed in the Southern regions of Brazil, contributing up to 91 % of national production in 2017. 
 Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-seasons from that of the Southern regions. 
 Hence, the incentivization of agricultural expansion into the Cerrado is considered to be a lucrative development in the region, partitioning approximately 44% of its total area to farmland. 
-However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to climate change, which could destabilize crop production to meet the domestic food demand. 
-Recognizing the impacts of the progressing agricultural production, the employment of crop system simulations could offer a sustain growth model for shareholders, legislatures, and farmers. 
-Moreover, the development of a simulated crop model could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges. 
+However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to anthropogenic climate change, which could destabilize crop production to meet the domestic food demand. 
+Recognizing the impacts of the progressing agricultural expansion, the employment of crop system simulations could offer a sustain growth model for shareholders, legislators, and farmers. 
+Moreover, the development of simulated crop models could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges. 
 
  This study aims to utilize the SIMPLE crop model developed by Zhao et al. to simulate crop production in the Cerrado region over varying crop treatments and temporal scales.
 Additionally, this study intends to explore the model’s statistical fit for wheat yield projection in relation to the observed experimental data. 
