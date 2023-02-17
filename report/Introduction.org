@@ -4,7 +4,7 @@ The Cerrado region of Brazil refers to the tropical savanna biomes that are wide
 In general, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually.
 Conventionally, Brazil’s wheat production is distributed in the Southern regions of Brazil, contributing up to 91 % of national production in 2017. 
 Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-seasons from that of the Southern regions. 
-Hence, the incentivization of agricultural expansion into the Cerrado is considered a lucrative development in the region, partitioning approximately 44% of its total area to farmland. 
+Hence, the incentivization of agricultural expansion into the Cerrado is considered to be a lucrative development in the region, partitioning approximately 44% of its total area to farmland. 
 However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to climate change, which could destabilize crop production to meet the domestic food demand. 
 Recognizing the impacts of the progressing agricultural production, the employment of crop system simulations could offer a sustain growth model for shareholders, legislatures, and farmers. 
 Moreover, the development of a simulated crop model could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges. 
@@ -12,16 +12,16 @@ Moreover, the development of a simulated crop model could illuminate the crucial
  This study aims to utilize the SIMPLE crop model developed by Zhao et al. to simulate crop production in the Cerrado region over varying crop treatments and temporal scales.
 Additionally, this study intends to explore the model’s statistical fit for wheat yield projection in relation to the observed experimental data. 
 Simultaneously, the model’s response to climate impact will be assessed under the conditions presented in RCP 8.5 climate change model. 
-Although several models have been extensively developed for wheat, the SIMPLE crop model has been selected for the study due to its relatively simple but dynamic nature. 
+Although several models have been extensively developed for wheat, the SIMPLE crop model is selected for the study due to its relatively simple yet dynamic nature. 
 Notably, the integration of widely understood processes with few parameters and data requirements that exclude crop-specific processes, is considered the appeal of utilizing the SIMPLE model. 
 Overall, input variables such as the sowing/harvesting date, irrigation status, and the initial variables will be adapted in accordance to the experimental data. 
 The weather inputs for this study will be derived from daily maximum/minimum temperature, rainfall, and solar radiation, in which the data will be provided by NASA POWER. 
-Additionally, the atmospheric CO2 concentration will be assumed to be 420 ppm, in accordance global average values of the Mauna Loa Observatory. 
-Lastly, the soil type input for this study is to be determined by referring to the Unified Soil Classification System that best characterizes the common soil type of the Cerrado region. 
+Additionally, the atmospheric CO2 concentration will be assumed to be 420 ppm, in accordance to the global average values of the Mauna Loa Observatory at the time of the experiments. 
+Lastly, the soil type input for this study is to be determined by referring to the Unified Soil Classification System Pyramid that best characterizes the common soil type of the Cerrado region. 
 
 Lastly, it is worth noting that the Cerrado is a topic of interest due to its unprecedented agronomic background. 
-For example, the seasonal variation of water usage and the blast disease by the fungus Pyricularia oryzae can be identified as significant threat to long-term productivity and yield stability. 
-Taking such backgrounds into consideration, the experimental sites Rio Paranaíba, Viçosa, São Gotardo, Sete Lagoas, and Itutinga will be explored for this study. 
+For example, the seasonal variation of water usage and the blast disease caused by the fungus Pyricularia oryzae is identified as significant threats to long-term productivity and yield stability. 
+Taking such backgrounds into consideration, the experimental sites of Rio Paranaíba, Viçosa, São Gotardo, Sete Lagoas, and Itutinga will be explored for this study. 
 This accounts for the application of irrigation treatments and biotic stress responses that the field experiments were previously exposed to. 
 Namely, the wheat cultivar strain BRS264 will be addressed in this study, as it was widely applied to research irrigation treatments under varying seasonal conditions. 
 Additionally, it is to be noted that converntional wheat cultivation favors mild air temperatures. Therefore, the selected locations of the Cerrado are to be situated in high altitude regions. 
