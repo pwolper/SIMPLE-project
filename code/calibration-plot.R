@@ -9,6 +9,7 @@ setwd(here::here())
 
 BRS264 <- read.csv("./results/2023-02-18_experiments_all_415ppm.csv")
 
+simName <- "Obs_Sim_all_415"
 
 BRS264$location <- c()
 BRS264$irrigation <- c()
@@ -39,9 +40,11 @@ ggplot(BRS264,aes(x=Sim_Yield,y=Obs_Yield))+
   geom_abline(slope = 1, intercept = 0) +
   scale_x_continuous(limits = c(1000,5500)) +
   scale_y_continuous(limits = c(1000,5500)) +
-  # labs(title = "Simulation of wheat growth in Mato Grosso, Brazil", subtitle = "13 experiments were simulated and compared to the observed yield") +
+  labs(caption = "Fig. 2", x = "Simulated Yield (t ha-1)", y  = "Observed yield (t ha-1)") +
   theme_light()
 
+filename <- paste0("./results/experimental-data/",format(Sys.time(),"%Y-%m-%d_"),simName)
+ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
 # Summary statistics
 
 ## r.squared
@@ -85,6 +88,5 @@ stats <- data.frame(r_squared,mae, rmse, md)
 rownames(stats) = c("All","healthy","Vicosa")
 stats
 
-simName <- "stats"
-filename <- paste0("./results/",format(Sys.time(),"%Y-%m-%d_"),simName)
-write.csv(stats, paste0(filename,".csv"),quote = FALSE)
+filename_csv <- paste0("./results/experimental-data/",format(Sys.time(),"%Y-%m-%d_"),simName,"_stats")
+write.csv(stats, paste0(filename_csv,".csv"),quote = FALSE)

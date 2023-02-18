@@ -209,7 +209,7 @@ if(PredictionModel=='OFF'){
   gplot(Res_daily,Res_Summary,Obs_Biomass,Obs_FSolar)
   
   simName <- "experiments_all_415ppm"
-  filename <- paste0("../results/",format(Sys.time(),"%Y-%m-%d_"),simName)
+  filename <- paste0("../results/experimental-data/",format(Sys.time(),"%Y-%m-%d_"),simName)
   ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
   write.csv(Res_Summary,paste0(filename,".csv"),row.names = FALSE,quote = FALSE)
 
