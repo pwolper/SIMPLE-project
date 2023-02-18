@@ -5,9 +5,9 @@ library(here)
 library(Metrics)
 library(hydroGOF)
 
-here::here()
+setwd(here::here())
 
-BRS264 <- read.csv("./results/2023-02-15_experiments_all.csv")
+BRS264 <- read.csv("./results/2023-02-18_experiments_all_415ppm.csv")
 
 
 BRS264$location <- c()
@@ -46,33 +46,45 @@ ggplot(BRS264,aes(x=Sim_Yield,y=Obs_Yield))+
 
 ## r.squared
 lm <- lm(data = BRS264,Sim_Yield ~ Obs_Yield)
-summary(lm)$r.squared
+r_all <- summary(lm)$r.squared
 
 lm_nof <- lm(data = BRS264_nof, Sim_Yield ~ Obs_Yield)
-summary(lm_nof)$r.squared
+r_nof <- summary(lm_nof)$r.squared
 
 lm_vico <- lm(data = BRS264_vico, Sim_Yield ~ Obs_Yield)
-summary(lm_vico)$r.squared
+r_vico <- summary(lm_vico)$r.squared
+
+r_squared <- c(r_all, r_nof, r_vico)
+r_squared
 
 ##Mean absolute error
-mae(BRS264$Obs_Yield,BRS264$Sim_Yield)
+mae <- c(mae(BRS264$Obs_Yield,BRS264$Sim_Yield),
+         mae(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield),
+         mae(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield))
 
-mae(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield)
-
-mae(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield)
+mae
 
 ## Root mean squared error
-rmse(BRS264$Obs_Yield,BRS264$Sim_Yield)
+rmse <- c(rmse(BRS264$Obs_Yield,BRS264$Sim_Yield),
+          rmse(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield),
+          rmse(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield))
 
-rmse(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield)
-
-rmse(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield)
+rmse
 
 ## Index of Agreement (d)
-md(BRS264$Sim_Yield,BRS264$Obs_Yield)
+md <- c(md(BRS264$Sim_Yield,BRS264$Obs_Yield),
+        md(BRS264_nof$Sim_Yield,BRS264_nof$Obs_Yield),
+        md(BRS264_vico$Sim_Yield,BRS264_vico$Obs_Yield))
 
-md(BRS264_nof$Sim_Yield,BRS264_nof$Obs_Yield)
-
-md(BRS264_vico$Sim_Yield,BRS264_vico$Obs_Yield)
-
+md
 #### Why is md smaller for the nof data??
+
+# Write to csv
+                                        #
+stats <- data.frame(r_squared,mae, rmse, md)
+rownames(stats) = c("All","healthy","Vicosa")
+stats
+
+simName <- "stats"
+filename <- paste0("./results/",format(Sys.time(),"%Y-%m-%d_"),simName)
+write.csv(stats, paste0(filename,".csv"),quote = FALSE)
