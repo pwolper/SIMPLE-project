@@ -7,7 +7,7 @@ library(hydroGOF)
 
 setwd(here::here())
 
-BRS264 <- read.csv("./results/2023-02-18_experiments_all_415ppm.csv")
+BRS264 <- read.csv("./results/experimental-data/2023-02-18_experiments_all_415ppm.csv")
 
 simName <- "Obs_Sim_all_415"
 
@@ -41,10 +41,12 @@ ggplot(BRS264,aes(x=Sim_Yield,y=Obs_Yield))+
   scale_x_continuous(limits = c(1000,5500)) +
   scale_y_continuous(limits = c(1000,5500)) +
   labs(caption = "Fig. 2", x = "Simulated Yield (t ha-1)", y  = "Observed yield (t ha-1)") +
-  theme_light()
+  theme_bw() +
+  theme(axis.title = element_text(size = 16))
 
 filename <- paste0("./results/experimental-data/",format(Sys.time(),"%Y-%m-%d_"),simName)
 ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
+
 # Summary statistics
 
 ## r.squared
