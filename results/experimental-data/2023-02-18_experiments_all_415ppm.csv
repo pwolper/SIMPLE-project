@@ -1,0 +1,14 @@
+Crop,Exp,Label,Sim_Yield,Obs_Yield,Duration,Trt
+wheat,BRS264,RIOPA_18_irrigated,4751,5349.7,109,1
+wheat,BRS264,SAOG_21_nonirrigated,3883,1633.8,97,10
+wheat,BRS264,SAOG_22_nonirrigated,4336,2744.5,109,11
+wheat,BRS264,SETE_20_irrigated,4232,2200,83,12
+wheat,BRS264,ITUT_21_nonirrigated,4930,3768.3,115,13
+wheat,BRS264,RIOPA_19_irrigated,5247,4588.2,111,2
+wheat,BRS264,VICO_19_irrigated,4696,4628.7,105,3
+wheat,BRS264,VICO_20_irrigated,4924,4716.4,105,4
+wheat,BRS264,VICO_20_nonirrigated,4325,4693.3,104,5
+wheat,BRS264,VICO_21_irrigated,4302,3527.8,102,6
+wheat,BRS264,SAOG_20_irrigated,4547,5087.7,88,7
+wheat,BRS264,SAOG_20_nonirrigated,4878,1176.3,112,8
+wheat,BRS264,SAOG_21_irrigated,4929,5691.9,108,9
