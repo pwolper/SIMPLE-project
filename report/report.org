@@ -40,4 +40,6 @@ We also observe that the accuracy of predicting yield varies between locations, 
 ** Climate change prediction
 Work out results for climate change data simulations. Depending on how much time we have.
 
+[[../results/cc-model/2023-02-18_yield_prediction_cc_model.png]]
+
 * Discussion
