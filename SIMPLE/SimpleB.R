@@ -204,14 +204,19 @@ if(PredictionModel=='OFF'){
   Speciesgap=paste(unique(Res_summary$Crop),collapse = "_")
   write.table(Res_daily,paste("./Output/Res_daily_",Speciesgap,"_",Yeargap,".csv",sep=""),col.names=TRUE,row.name=FALSE,sep=",")
   write.table(Res_summary,paste("./Output/Res_summary_",Speciesgap,"_",Yeargap,".csv",sep=""),col.names=TRUE,row.name=FALSE,sep=",")
-  
+
+
+  Res_Summary_vico <- Res_Summary[Res_Summary$Trt %in% c(3,4,5,6),]
+  Res_daily_vico <- Res_daily[Res_daily$Trt %in% c(3,4,5,6),]
+
+
   source("Plot.R")
   gplot(Res_daily,Res_Summary,Obs_Biomass,Obs_FSolar)
-  
-  simName <- "experiments_all_415ppm"
+
+  simName <- "nofungal"
   filename <- paste0("../results/experimental-data/",format(Sys.time(),"%Y-%m-%d_"),simName)
   ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
-  write.csv(Res_Summary,paste0(filename,".csv"),row.names = FALSE,quote = FALSE)
+  # write.csv(Res_Summary,paste0(filename,".csv"),row.names = FALSE,quote = FALSE)
 
 }else{
   print("Prediction model model simulating crop growth. No observation data available. ")
