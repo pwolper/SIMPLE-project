@@ -70,6 +70,8 @@ library(ggplot2)
 library(plyr)
 library(parallel)
 library(here)
+setwd(here::here("SIMPLE"))
+
 if(dev.cur()>1){replicate(dev.cur()-1,dev.off())} 
 # setwd(script.dir <- dirname(sys.frame(1)$ofile)) #### Relative working directory
 #setwd("/home/philip/Documents/Nextcloud/Uni/Courses/Crop_Systems_Modeling/SIMPLE/SIMPLE_test")  ########Absolute working directory
@@ -206,7 +208,7 @@ if(PredictionModel=='OFF'){
   source("Plot.R")
   gplot(Res_daily,Res_Summary,Obs_Biomass,Obs_FSolar)
   
-  simName <- "experiments_all"
+  simName <- "experiments_all_415ppm"
   filename <- paste0("../results/",format(Sys.time(),"%Y-%m-%d_"),simName)
   ggsave(paste0(filename,".png"),device = "png", bg = "white", width = 10, height = 8)
   write.csv(Res_Summary,paste0(filename,".csv"),row.names = FALSE,quote = FALSE)
