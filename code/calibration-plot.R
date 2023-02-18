@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(here)
 library(Metrics)
+library(hydroGOF)
 
 here::here()
 
@@ -26,7 +27,11 @@ BRS264$irri <- as.factor(BRS264$irri)
 BRS264$location <- as.factor(BRS264$location)
 
 str(BRS264)
+
 BRS264_nof <- BRS264[BRS264$fungal == "none",]
+
+BRS264_vico <- BRS264[BRS264$location == "VICO",]
+BRS264_vico
 
 # Plotting of results
 ggplot(BRS264,aes(x=Sim_Yield,y=Obs_Yield))+
@@ -41,23 +46,33 @@ ggplot(BRS264,aes(x=Sim_Yield,y=Obs_Yield))+
 
 ## r.squared
 lm <- lm(data = BRS264,Sim_Yield ~ Obs_Yield)
-summary(lm)
+summary(lm)$r.squared
 
 lm_nof <- lm(data = BRS264_nof, Sim_Yield ~ Obs_Yield)
-summary(lm_nof)
+summary(lm_nof)$r.squared
+
+lm_vico <- lm(data = BRS264_vico, Sim_Yield ~ Obs_Yield)
+summary(lm_vico)$r.squared
 
 ##Mean absolute error
 mae(BRS264$Obs_Yield,BRS264$Sim_Yield)
 
 mae(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield)
 
+mae(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield)
+
 ## Root mean squared error
 rmse(BRS264$Obs_Yield,BRS264$Sim_Yield)
 
 rmse(BRS264_nof$Obs_Yield,BRS264_nof$Sim_Yield)
 
+rmse(BRS264_vico$Obs_Yield,BRS264_vico$Sim_Yield)
+
 ## Index of Agreement (d)
 md(BRS264$Sim_Yield,BRS264$Obs_Yield)
 
 md(BRS264_nof$Sim_Yield,BRS264_nof$Obs_Yield)
+
+md(BRS264_vico$Sim_Yield,BRS264_vico$Obs_Yield)
+
 #### Why is md smaller for the nof data??
