@@ -59,7 +59,7 @@ GridsimulationSwitch=c('OFF','ON')[1]
 ########1=single point simulation, 2= Grid cell simulation
 
 ########Prediction Model, no observations available#######
-PredictionModel=c('OFF','ON')[1]
+PredictionModel=c('OFF','ON')[2]
 
 ###########load packages######################################################################
 list.of.packages <- c("ggplot2", "plyr","parallel","here") #added installation of here package to manage project directories on different machines.
