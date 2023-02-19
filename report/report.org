@@ -51,7 +51,7 @@ We also observe that the accuracy of predicting yield varies between locations, 
 | Vicosa  |     0.336 |  354.35 |  442.34 | 0.479 |
 |---------+-----------+---------+---------+-------|
 
-Summary statistics decribing the accuracy are done for all experiments, as well as subgroups of the data. These can be seen in Table [[stats]] and include all the experiments (All), excluding the nonirrigated trials in Sao Gotardo, where the plants where infected with the blast fungus (healthy) and statistics of only the trials in Vicosa (Vicosa), where the model performed the most accurately.
+Summary statistics decribing the accuracy are done for all experiments, as well as subgroups of the data. These can be seen in Table [[stats]] and include all the experiments (All), excluding the nonirrigated trials in Sao Gotardo, where the plants were infected with the blast fungus (healthy) and statistics of only the trials in Vicosa (Vicosa), where the model performed the most accurately.
 
 [[../results/experimental-data/2023-02-18_Vico_only.png]]
 
