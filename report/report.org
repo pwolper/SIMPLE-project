@@ -1,7 +1,6 @@
 #+title: Simulation of wheat yield in the Cerrado region of Southern Brazil using the SIMPLE crop model
 #+OPTIONS: toc:nil
 #+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 
 * Introduction
