@@ -221,9 +221,10 @@ if(PredictionModel=='OFF'){
 }else{
   print("Prediction model model simulating crop growth. No observation data available. ")
   str(Res_summary)
-
-  write.table(Res_summary,"../results/cc-model/CC-model-Simulation.csv",append = TRUE,
-              col.names = FALSE, row.names = FALSE, quote = FALSE, sep = ",")
+  str(Res_daily)
+  # write.table(Res_summary,"../results/cc-model/CC-model-Simulation.csv",append = TRUE,
+              # col.names = FALSE, row.names = FALSE, quote = FALSE, sep = ",")
+  write.table(Res_daily,"../results/cc-model/Res_daily.csv",row.names = FALSE, sep = ",")
   ## Write simulation results to file.
   ## Plot sumulation results
 }
