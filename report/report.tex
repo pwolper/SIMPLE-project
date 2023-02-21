@@ -107,18 +107,20 @@ The results of the simulation across experiments are shown in (Figure calibratio
 These results indicate that in many cases there is significant deviation between the simulated and observed yield. While several experiments are simulated with decent accuracy, a general trend of the simulation to overestimating the observed yield can be observed. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for.
 We also observe that the accuracy of predicting yield varies significantly between locations, as can be expected between differing environments. Experiments conducted in Vicosa, MG are the most accurately simulated of all 5 locations with a RRMSE of 10.1\% (see Figure \ref{Vicosa}). On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which  have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, grossly overestimating the yield in the simulation. This discrepancy is likely caused by the fungal pathogen having a negative effect on the yield, which is not accounted for by the model.
 
-\begin{table}[htbp]
-\caption{\label{stats}Model statistics}
+
+\begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|c|}
+\caption{Model statistics}
+\label{stats}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccc}
 \hline
- & r\_squared & mae & rmse & md\\
-\hline
-All & 0.226 & 1131.89 & 1499.29 & 0.435\\
-healthy & 0.254 & 717.22 & 890.4 & 0.349\\
-Vicosa & 0.336 & 354.35 & 442.34 & 0.479\\
-\hline
-\end{tabular}
+\textbf{} & \textbf{r\_squared} & \textbf{mae} & \textbf{rmse} & \textbf{md} \\ \hline
+All       & 0.226               & 1131.89      & 1499.29       & 0.435       \\
+healthy   & 0.254               & 717.22       & 890.4         & 0.349       \\
+Vicosa    & 0.336               & 354.35       & 442.34        & 0.479       \\ \hline
+\end{tabular}%
+}
 \end{table}
 
 Summary statistics decribing the accuracy are done for all experiments, as well as subgroups of the data. These can be seen in Table \ref{stats} and include all the experiments (All), excluding the nonirrigated trials in Sao Gotardo, where the plants were infected with the blast fungus (healthy) and statistics of only the trials in Vicosa (Vicosa), where the model performed the most accurately (see Fig \ref{Vicosa}).
