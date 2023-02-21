@@ -62,6 +62,8 @@ As the amount of greenhouse gases (GHG) released by humans and their societies p
 In order to simulate the effect of increasing atmospheric CO_{2} concentrations on wheat yield in the brazilian Cerrado, we will assume a linear increase of CO_{2} and reaches 795 ppm by the year 2100. Because our simulation starts in the year 2030, we have choose an appropriate concentration of 450 ppm as a starting value, and assume an increase by 5 ppm.
 
 #+caption: Climate change model
-[[../results/cc-model/2023-02-19_yield_prediction_cc_model_CO2.png]]
+#+attr_latex: :width 1\textwidth
+[[../results/cc-model/2023-02-21_yield_prediction_cc_model_CO2_with_conc.png]]
 
 * Discussion
+- If the CO2 concentration exceeds 700 ppm ,then the SIMPLE model assumes saturation. This might explain, why the model with increasing CO2 values curves back to decrease yields after initially rising up..
