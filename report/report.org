@@ -5,7 +5,7 @@
 #+LATEX_HEADER: \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 
 * Introduction
-The Cerrado region of Brazil refers to the tropical savanna biomes that are widely distributed in the Eastern states of the country.In general, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually. Conventionally, Brazil’s wheat production is distributed in the Southern regions of Brazil, contributing up to 91 % of national production in 2017. Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-seasons from that of the Southern regions. It is worth noting that the Cerrado is a topic of interest due to its unprecedented agronomic background. For example, the seasonal variation of water usage and the blast disease caused by the fungus /Pyricularia oryzae/ are identified as significant threats to long-term productivity and yield stability. The incentive of agricultural expansion into the Cerrado is considered to be a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to anthropogenic climate change, which could destabilize crop production to meet the domestic food demand. Recognizing the impacts of the progressing agricultural expansion, the employment of crop system simulations could offer a sustain growth model for shareholders, legislators, and farmers. Moreover, the development of simulated crop models could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges.\\
+The Cerrado region of Brazil refers to the tropical savanna biomes that are widely distributed in the Eastern states of the country. In general, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually. Conventionally, Brazil’s wheat production is distributed in the Southern regions of Brazil, contributing up to 91 % of national production in 2017. Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-seasons from that of the Southern regions. It is worth noting that the Cerrado is a topic of interest due to its unprecedented agronomic background. For example, the seasonal variation of water usage and the blast disease caused by the fungus /Pyricularia oryzae/ are identified as significant threats to long-term productivity and yield stability. The incentive of agricultural expansion into the Cerrado is considered to be a lucrative development in the region, partitioning approximately 44% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to anthropogenic climate change, which could destabilize crop production to meet the domestic food demand. Recognizing the impacts of the progressing agricultural expansion, the employment of crop system simulations could offer a sustain growth model for shareholders, legislators, and farmers. Moreover, the development of simulated crop models could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges.
 
 #+caption: Relative location of the Cerrado in Brazil. The circle encloses the area .
 #+attr_latex: :width 0.5\textwidth
@@ -21,6 +21,39 @@ Experimentally determined wheat yield was collected for 13 field trials from fiv
 #+attr_latex: :width 0.9\textwidth
 [[./figures/Brazil.png]]
 
+#+caption: List of 13 field trials used in this study.
+#+NAME: list
+#+attr_latex: :align |ccccc|
+|------+---------------+-------+--------------+-----------------|
+| Year | Location      | Water | Name         | Trial period    |
+|------+---------------+-------+--------------+-----------------|
+|------+---------------+-------+--------------+-----------------|
+| 2018 | Rio Paranaiba | no    | irrigated    | May-September   |
+|------+---------------+-------+--------------+-----------------|
+| 2019 | Rio Paraneiba | no    | irrigated    | May-September   |
+|------+---------------+-------+--------------+-----------------|
+| 2019 | Vicosa        | no    | irrigated    | June-October    |
+|------+---------------+-------+--------------+-----------------|
+| 2020 | Vicosa        | no    | irrigated    | June-October    |
+|------+---------------+-------+--------------+-----------------|
+| 2020 | Vicosa        | yes   | nonirrigated | June-October    |
+|------+---------------+-------+--------------+-----------------|
+| 2021 | Vicosa        | no    | irrigated    | June-October    |
+|------+---------------+-------+--------------+-----------------|
+| 2020 | Sao Gotardo   | no    | irrigated    | May-August      |
+|------+---------------+-------+--------------+-----------------|
+| 2020 | Sao Gotardo*  | yes   | nonirrigated | July-November   |
+|------+---------------+-------+--------------+-----------------|
+| 2021 | Sao Gotardo   | no    | irrigated    | April-September |
+|------+---------------+-------+--------------+-----------------|
+| 2021 | Sao Gotardo*  | yes   | nonirrigated | March-August    |
+|------+---------------+-------+--------------+-----------------|
+| 2022 | Sao Gotardo*  | yes   | nonirrigated | March-August    |
+|------+---------------+-------+--------------+-----------------|
+| 2020 | Sete Lagoas   | no    | irrigated    | July-November   |
+|------+---------------+-------+--------------+-----------------|
+| 2021 | Itutinga      | yes   | nonirrigated | March-August    |
+|------+---------------+-------+--------------+-----------------|
 
 * SIMPLE model
 
@@ -64,6 +97,10 @@ In order to simulate the effect of increasing atmospheric CO_{2} concentrations 
 #+caption: Climate change model
 #+attr_latex: :width 1\textwidth
 [[../results/cc-model/2023-02-21_yield_prediction_cc_model_CO2_with_conc.png]]
+
+#+caption: Crop simulation parameters for simulation with constant CO_2 concentration.
+#+attr_latex: :width 1\textwidth
+[[../results/cc-model/paras_sim.png]]
 
 * Discussion
 - If the CO2 concentration exceeds 700 ppm ,then the SIMPLE model assumes saturation. This might explain, why the model with increasing CO2 values curves back to decrease yields after initially rising up..
