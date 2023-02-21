@@ -21,7 +21,7 @@ Experimentally determined wheat yield was collected for 13 field trials from fiv
 #+attr_latex: :width 0.9\textwidth
 [[./figures/Brazil.png]]
 
-#+caption: List of 13 field trials used in this study.
+#+caption: List of 13 field trials used in this study, adapted from Casagrande, 2023. (*field trials inoculated with blast)
 #+NAME: list
 #+attr_latex: :align |ccccc|
 |------+---------------+-------+--------------+-----------------|
