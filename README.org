@@ -81,9 +81,33 @@ Values adjusted during calibration:
 | Cultivar/I50A |     450 |  500 |
 | Cultivar/I50B |     250 |  300 |
 
-** Parameters that could be adusted
-- Tbase. Casagrande et al. used 5 degrees celcius?
-  Leads to worse results though.
+** Parameters
+Species Parameters:
+| Parameter | Value |
+| Tbase     |     0 |
+| Topt      |    15 |
+| RUE       |  1.24 |
+| I50maxH   |   100 |
+| I50maxW   |    25 |
+| MaxT      |    34 |
+| ExtremeT  |    45 |
+| CO2_RUE   |  0.08 |
+| S_Water   |   0.7 |
+
+Cultivar Parameters:
+| Parameter | Value |
+| Tsum      |  2200 |
+| HI        |  0.36 |
+| I50A      |   500 |
+| I50B      |   300 |
+
+Soil:
+| Parameter | Value |
+| AWC       |  0.12 |
+| RCN       |    70 |
+| DDC       |   0.3 |
+| RZD       |   800 |
+
 
 
 ** Soil
