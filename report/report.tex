@@ -1,4 +1,4 @@
-% Created 2023-02-21 Di 18:25
+% Created 2023-02-21 Di 18:28
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -28,7 +28,7 @@
 \maketitle
 
 \section{Introduction}
-\label{sec:org2c38188}
+\label{sec:org4677853}
 The Cerrado region of Brazil refers to the tropical savanna biomes that are widely distributed in the Eastern states of the country. In general, the climate of Cerrado region is characterized by the semi humid tropical regimes that are dominated by wet and cold seasons annually. Conventionally, Brazil’s wheat production is distributed in the Southern regions of Brazil, contributing up to 91 \% of national production in 2017. Although not considered a traditional region of cereal production, the Cerrado has become the target of agricultural expansion since the 1980s, due to its potential to grow wheat in the off-seasons from that of the Southern regions. It is worth noting that the Cerrado is a topic of interest due to its unprecedented agronomic background. For example, the seasonal variation of water usage and the blast disease caused by the fungus \emph{Pyricularia oryzae} are identified as significant threats to long-term productivity and yield stability. The incentive of agricultural expansion into the Cerrado is considered to be a lucrative development in the region, partitioning approximately 44\% of its total area to farmland. However, Brazil’s agroeconomic reliance on such expansions may highlight the increasing vulnerability to anthropogenic climate change, which could destabilize crop production to meet the domestic food demand. Recognizing the impacts of the progressing agricultural expansion, the employment of crop system simulations could offer a sustain growth model for shareholders, legislators, and farmers. Moreover, the development of simulated crop models could illuminate the crucial system components and its interrelationships involved in crop production, overcoming agronomic challenges.
 
 \begin{figure}[htbp]
@@ -38,11 +38,11 @@ The Cerrado region of Brazil refers to the tropical savanna biomes that are wide
 \end{figure}
 
 \section{Objectives and Aims}
-\label{sec:org40f6b7a}
+\label{sec:org0e6e0fb}
 This study aims to utilize the SIMPLE crop model developed by Zhao et al. to simulate crop production in the Cerrado region at various locations and temporal scales. Additionally, this study intends to explore the model’s statistical fit for wheat yield simulations in relation to the observed experimental data. Simultaneously, the model’s response to a changing climate will be assessed under the conditions presented in RCP 8.5 climate change model. Although several models have been extensively developed for wheat, the SIMPLE crop model is selected for the study due to its relatively simple yet dynamic nature. Notably, the integration of widely understood processes with few parameters and data requirements that exclude crop-specific processes, is considered the appeal of utilizing the SIMPLE model.
 
 \section{Experimental Data}
-\label{sec:orgbcaae2a}
+\label{sec:org95a9635}
 Experimentally determined wheat yield was collected for 13 field trials from five experimental sites located in the Cerrado (Rio Paranaíba, Viçosa, São Gotardo, Sete Lagoas, and Itutinga) (\textbf{Table and Figure}, who to site). The field trials were conducted between 2018 and 2021 and were conducted with the wheat cultivar BRS264, which is the most widely grown and consumed culitvar in the Cerrado since the last 10 years, due to its tolerance to heat, pathogens, water lodging and toxic metal elements commonly found in Cerrado soils (\textbf{cited by Sun: BRS264 P5}). While the sowing date varies between locations and experiments, on average the wheat was sown on the 20th of May and harvested on the 19th of September. This timeline coincides with the recommendation for this cultivar (\textbf{cite by Sun: ''BRS264 P9 and P11''}). Because we did not have access to detailed soil data for each location, soil parameters were approximated from the average content of clay, sand and silt in the Cerrado (\textbf{site soil content}). Using the Unified Soil Classification System Pyramid, this yielded a soil with sandy loamy characteristics. The 13 field trials included both irrigated and non-irrigated experiments, but no further data on the amount of irrigation was supplied. While for most field trials various environmental conditions are controlled such as nutrient saturation and disease control, it is very important to note that wheat grwon under nonirrigated conditions in the location São Gotardo was artificially inoculated with the fungal pathogen \emph{Magnaporthae oryzae} pv. \emph{Triticum}, which causes wheat blast disease (cited by Sun 'BRS 264 P10').
 
 \begin{figure}[htbp]
@@ -89,15 +89,18 @@ Year & Location & Water & Name & Trial period\\
 \end{table}
 
 \section{SIMPLE model}
-\label{sec:org03f49c2}
+\label{sec:org3b8960f}
 The SIMPLE crop model was used as outlined by Zhao et al., modelling our desired crop growth, development, and yield using a daily time step. In general, the input parameters of this experiments were adapted to account for the effect of daily temperature, heat stress, rainfall, and atmospheric CO2 concentration. Several assumptions were taken into consideration to effectively simulate the biological systems involved. 
-For example, with the aim to keep the model simple to utilize, the accumulation of phenological temperature for maturity began when it was above the base temperature for the crop series. This process did not account for an optimum temperature threshold, and omitted any other growth stages. Additionally, the model acknowledged that photosynthesis is a function of radiation use efficiency, with biomass growth converted from the daily active radiation intercepted by the canopy. Based on this, the biomass accumulation was calculated as a product of radiation, fraction of intercepted solar radiation, radiation use efficiency, fraction of temperature and atmospheric carbon dioxide. Similarly, the final yield of wheat from the Cerrado region was calculated as the product of accumulated biomass and its specific harvest index. It is worth noting that to account for heat stress, the SIMPLE model considers the fraction of water, temperature, and heat, but disregards leaf area index.
+For example, with the aim to keep the model simple to utilize, the accumulation of phenological temperature for maturity began when it was above the base temperature for the crop series. This process did not account for an optimum temperature threshold, and omitted any other growth stages. Additionally, the model acknowledged that photosynthesis is a function of radiation use efficiency, with biomass growth converted from the daily active radiation intercepted by the canopy. Based on this, the biomass accumulation was calculated as a product of radiation, fraction of intercepted solar radiation, radiation use efficiency, fraction of temperature and atmospheric carbon dioxide. Similarly, the final yield of wheat from the Cerrado region was calculated as the product of accumulated biomass and its specific harvest index. It is worth noting that to account for heat stress, the SIMPLE model considers the fraction of water, temperature, and heat, but disregarded leaf area index.
 As emphasized earlier, the SIMPLE model integrates widely understood processes by simplifying data requirements outside of crop-specific processes. Hence, the simulation of Cerrado grown wheats utilized the sowing/harvesting date, irrigation status, and the initial variables as provided by the experimental data. Additionally, the weather inputs that pertain to temperature, rainfall, and fraction of solar radiation were adapted from measurement data from NASA POWER. During initialization, any specific parameters such as species parameters, not provided directly by the SIMPLE model, were set manually to calibrate the model. 
+The calibration process involved executing the model to observe whether it was able to simulate the cultivar parameters at different locations and time frames within reasonable ranges. As such, throughout the calibration process, several parameters were adapted from the weather data. For instance, the concept of I50A and I50B were introduced to express the cumulative temperature required for leaf area development to intercept 50\% of solar radiation during canopy closure, and cumulative temperature required from maturity to 50\% of radiation interception during canopy senescence, respectively. For the cultivar parameters for BRS264 used in this study, the calibration process involved the adjustment of the I50A and I50B values to 500 and 300 from the dataset provided. Simultaneously, the harvest index of the strain was set to 0.34 to best reflect the growth conditions it was exposed to. 
+Furthermore, to calibrate the model, specific irrigation treatments of the experimental locations was considered. This is due to the experimental data exposing the same cultivar to alternating irrigation conditions in different years and locations. Based on literature, these different irrigation treatments were identified as experiments that tested for the best strategies of cultivation in the Cerrado during the off-seasons of wheat cultivation under water-stressed conditions. As such, the model simulated all the experimental datasets under the assumption of irrigation conditions. This was justified as the scope of this investigation does not simulate the yield under water-stressed conditions. Moreover, this assumption would allow the study to avoid skewing the model’s yield simulation due to lack ability to distinguish each condition of the experimental location, which could ultimately influence the sensitivity of the model. Lastly, as the SIMPLE model does not account for nutrient dynamics, this study did not accept potential nutrient treatments as an input parameter.
+
 
 \section{Results}
-\label{sec:org77174b0}
+\label{sec:org2731a13}
 \subsection{Simulated experiments}
-\label{sec:org0d4f986}
+\label{sec:org3bac09f}
 In order to assess the capabilities of the SIMPLE model to model wheat growth in the Cerrado region, we simulated yield for 13 field trials in 5 different locations. Irrigated location where simulated with no water stress, implying a perfect watering routine. Nonirrigated crops had water stress turned on and relied only on rainfalls, supplied in the weather data. Since no nutrients are simulated in the SIMPLE model, we assume perfect nutrient saturation of the crops, a state not uncommon for field trials. The atmospheric CO2 concentration was set to 415 ppm, reflecting the current value as of 2020. Soil parameters were estimated from the content of Silt, Clay and Sand found in typical Cerrado soils (\textbf{cite soils})
 
 The species and cultivar parameters required by the SIMPLE mode were derived from literature or estimated based on similar species. (\textbf{cite zhao et al.}) Further calibration was done by adjusting cultivar parameters (Tsum, I50A, I50B and HI) within reasonable levels.
@@ -139,7 +142,7 @@ Summary statistics decribing the accuracy are done for all experiments, as well 
 
 
 \subsection{Climate change prediction}
-\label{sec:org192b121}
+\label{sec:org102f36a}
 In order to predict the effect climate change can have on wheat cultivation in the Cerrado, we simulated 70 years of wheat yields from the year 2030 until 2099. The simulations were conducted using the same parameters as the calibrated SIMPLE model. Environmental conditions such as temperature, rainfall and irrigation were obtained from a climate prediction model, which supplied daily weather data for the from 2030 until the end of the century. The location predicted by the climate model is Brasilia, Brazil, the country's capital located approximately 600 km northwest of the location of our trials, but still in the Cerrado.
 
 To assess the effects of the predicted climate on crop growth we conducted simulations first keeping the atmoshperic CO\_2 concentration constant at 450 ppm, a value slightly higher than currently and realistic for 2030 (see Figure \ref{cc-model}A). Under theses conditions the wheat yield shows a visible decline, decreasing from around 4000 t ha\^{}(-1) in 2030 to approximately 2600 t ha\^{}(-1). Additionally the varies strongly from year to year, and there is almost no stable yield over multiple years. In some cases the yield is reduced by as much as 60\% compared to the previous year, as seen 2093-2094. Although cases of extremely low or higher than average yields are very common in our simulations, we do not find the occurence of these extreme event to significanlty increase in frequency as the years progress. Nevertheless, we simulate a significant decline in yields over the century, with constant CO\_2.
@@ -156,7 +159,7 @@ In order to simulate the effect of increasing atmospheric CO\textsubscript{2} co
 
 
 \subsection{Decreasing yield is due to higher temperature accelerating senescence}
-\label{sec:org29ac4d6}
+\label{sec:org3a65166}
 To understand the underlying factors contributing to the similated decreasing yield in the Cerrado, it is necessary to identify possible causes and how the SIMPLE model implements these. While a decrease in yield is often associated with different types of crop stress, we aim quantify the stresses contributing to the decreasing yield in our simulation. While an increasing average daily maximum temperature (Fig. \ref{paras-sim}A), could indicate heat stress, the factor responsible for heat stress, F\_heat, remains relatively constant and only shows slight heat stress in the mid 2090s (Fig. \ref{paras-sim}B). An alternative cause could be water stress, which could be an indirect effect of high temperature. But when observing the simulated factor responsible for water stress F\_Water (Figure \ref{paras-sim}C), this too remains constant over the course of the simulated time frame.
 
 \begin{figure}[htbp]
@@ -169,9 +172,9 @@ When observing the change in the fraction of solar radiation, /f/Solar, intercep
 
 
 \section{Discussion}
-\label{sec:org8e8a759}
+\label{sec:org0d94111}
 \begin{itemize}
-\item If the CO2 concentration exceeds 700 ppm ,then the SIMPLE model assumes saturation. This might explain, why the model with increasing CO2 values curves back to decrease yields after initially rising up..
+\item If the CO2 concentration exceeds 700 ppm ,then the SIMPLE model assumes saturation. This might explain, why the model with increasing CO2 values curves back to decrease yields after initially rising up. The reason behind this phenomenon may be due to the relationship between the plants and the carbon dioxide concentration in the air. Crop yields depend on the biomass produced by photosynthesis. CO2 is the resource for this process. However, high CO2 concentration will cause the plant stomata to close, and the stomata control plant evapotranspiration. Therefore, CO2 cannot be absorbed by plants to produce as much biomass as we would expect.
 
 Although there seems to be no significant increase of extreme yields as we get closer to the end of the century, this requires more accurate climate models and simulations to say for certain.
 \end{itemize}
