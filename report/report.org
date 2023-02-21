@@ -4,7 +4,7 @@
 #+OPTIONS: ^:{}
 #+LATEX_CLASS: article
 #+LATEX_HEADER: \usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
-#+LATEX_HEADER: \usepackage[]{biblatex}
+#+LATEX_HEADER: \usepackage[style=authoryear]{biblatex}
 #+LATEX_HEADER: \addbibresource{references.bib}
 
 * Introduction
