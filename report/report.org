@@ -65,13 +65,13 @@ The species and cultivar parameters required by the SIMPLE mode were derived fro
 
 (insert table here.)
 
-The results of the simulation across experiments are shown in (Figure calibration). The model has an accuracy of:
+The results of the simulation across experiments are shown in (Figure calibration). The model has an relative root mean square error across all trials of 39.1%:
 
 #+caption: Simulated vs. Observed yield for 13 field trial locations in the Cerrado, Brazil.
 [[../results/experimental-data/2023-02-18_Obs_Sim_all_415.png]]
 
 These results indicate that in many cases there is significant deviation between the simulated and observed yield. While several experiments are simulated with decent accuracy, a general trend of the simulation to overestimating the observed yield can be observed. Due to the simple nature of the model this is to be expected, since in reality there are many more yield-limiting factors, such as nutrients, that the SIMPLE model does not account for.
-We also observe that the accuracy of predicting yield varies between locations, as can  be expected between differing environments. It can be seen, that experiments conducted in Vicosa, MG have the best simulated results of all 5 locations. On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which also have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, by grossly overestimating the yield in the simulation. This discrepancy is likely caused by the fungal pathogen having a negative effect on the yield, which is not accounted for by the model.
+We also observe that the accuracy of predicting yield varies significantly between locations, as can be expected between differing environments. Experiments conducted in Vicosa, MG are the most accurately simulated of all 5 locations with a RRMSE of 10.1% (see Figure [[Vicosa]]). On the other hand, specifically the nonirrigated field trials in Sao Gotardo, which  have been inoculated with a fungal pathogen, show a bad fit between simulated and observed yield, grossly overestimating the yield in the simulation. This discrepancy is likely caused by the fungal pathogen having a negative effect on the yield, which is not accounted for by the model.
 
 #+caption: Model statistics
 #+NAME: stats
@@ -84,17 +84,21 @@ We also observe that the accuracy of predicting yield varies between locations, 
 | Vicosa  |     0.336 |  354.35 |  442.34 | 0.479 |
 |---------+-----------+---------+---------+-------|
 
-Summary statistics decribing the accuracy are done for all experiments, as well as subgroups of the data. These can be seen in Table [[stats]] and include all the experiments (All), excluding the nonirrigated trials in Sao Gotardo, where the plants were infected with the blast fungus (healthy) and statistics of only the trials in Vicosa (Vicosa), where the model performed the most accurately.
+Summary statistics decribing the accuracy are done for all experiments, as well as subgroups of the data. These can be seen in Table [[stats]] and include all the experiments (All), excluding the nonirrigated trials in Sao Gotardo, where the plants were infected with the blast fungus (healthy) and statistics of only the trials in Vicosa (Vicosa), where the model performed the most accurately (see Fig [[Vicosa]]).
 
+#+caption: Simulated yield for four field trials located in Vicosa, MG, Brazil.
+#+NAME: Vicosa
 [[../results/experimental-data/2023-02-18_Vico_only.png]]
 
 
 ** Climate change prediction
-As the amount of greenhouse gases (GHG) released by humans and their societies predicted to further increase during the second half of the century it, it's impact on agriculture is important for maintaining food security during a changing climate. As it is the most common GHG emitted by humans and contributes greatly to global warming the levels of CO_{2} in the atmosphere have been subject to much predictive modeling. According to the latest IPCC (*cite*) report, by the end of the 21st Century the concentration of CO_{2} in the atmosphere is predicteed to increase to levels anywhere between 400 ppm to 1100 ppm. While the lower limit of this prediction depends on the most favorable scietal drivers involving drastic reductions in emission very rapidly, the upper limits assumes the most detrimental course of society, involving little to no climate action. While both of these szenarios are considered unlikely, mean CO_{2}-concentration in the atmosphere is still likely to increase by up to 50% under realistic szenarios.
-
+In order to predict the effect climate change can have on wheat cultivation in the Cerrado, we simulated 70 years of wheat yields from the year 2030 until 2099. The simulations were conducted using the same parameters as the calibrated SIMPLE model. Environmental conditions such as temperature, rainfall and irrigation were obtained from a climate prediction model, which supplied daily weather data for the from 2030 until the end of the century. The location predicted by the climate model is Brasilia, Brazil, the country's capital located approximately 600 km northwest of the location of our trials, but still in the Cerrado.
+In order to assess the effects of the predicted climate on crop growth we conducted simulations first keeping the atmoshperic CO_2 concentration constant at 450 ppm, a value slightly higher than currently and realistic for 2030 (see Figure [[cc-model]]A). Under theses conditions the wheat yield shows a visible decline, decreasing from around 4000 t ha^(-1) in 2030 to approximately 2600 t ha^(-1). Additionally the varies strongly from year to year, and there is almost no stable yield over multiple years. In some cases the yield is reduced by as much as 60% compared to the previous year, as seen 2093-2094. Although cases of extremely low or higher than average yields are very common in our simulations, we do not find the occurence of these extreme event to significanlty increase in frequency as the years progress. Nevertheless, we simulate a significant decline in yields over the century, with constant CO_2.
+As the amount of greenhouse gases (GHG) released by humans and their societies predicted to further increase during the second half of the century it, it is important to understand the impact of increased GHGs on agriculture. As it is the most common GHG emitted by humans and contributes greatly to global warming the levels of CO_{2} in the atmosphere have been subject to much predictive modeling. According to the latest IPCC (*cite*) report, by the end of the 21st Century the concentration of CO_{2} in the atmosphere is predicted to increase to levels anywhere between 400 ppm to 1100 ppm. While the lower limit of this prediction depends on the most favorable scietal drivers involving drastic reductions in emission very rapidly, the upper limits assumes the most detrimental course of society, involving little to no climate action. While both of these szenarios are considered unlikely, mean CO_{2}-concentration in the atmosphere is still likely to increase by up to 50% under realistic szenarios.
 In order to simulate the effect of increasing atmospheric CO_{2} concentrations on wheat yield in the brazilian Cerrado, we will assume a linear increase of CO_{2} and reaches 795 ppm by the year 2100. Because our simulation starts in the year 2030, we have choose an appropriate concentration of 450 ppm as a starting value, and assume an increase by 5 ppm.
 
 #+caption: Climate change model
+#+NAME: cc-model
 #+attr_latex: :width 1\textwidth
 [[../results/cc-model/2023-02-21_yield_prediction_cc_model_CO2_with_conc.png]]
 
@@ -104,3 +108,5 @@ In order to simulate the effect of increasing atmospheric CO_{2} concentrations 
 
 * Discussion
 - If the CO2 concentration exceeds 700 ppm ,then the SIMPLE model assumes saturation. This might explain, why the model with increasing CO2 values curves back to decrease yields after initially rising up..
+
+  Although there seems to be no significant increase of extreme yields as we get closer to the end of the century, this requires more accurate climate models and simulations to say for certain.
