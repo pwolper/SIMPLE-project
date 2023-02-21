@@ -43,20 +43,20 @@ The SIMPLE model is calibrated with for this data. Optimal conditions (no diseas
 
 Experimental Data:
 
-| Year | Location       | Trt | Water | Name                 |
-| 2018 | Rio Paranaiba  |   1 | no    | RIOPA_18_irrigated   |
-| 2019 | Rio Paraneiba  |   2 | no    | RIOPA_19_irrigated   |
-| 2019 | Vicosa         |   3 | no    | VICO_19_irrigated    |
-| 2020 | Vicosa         |   4 | no    | VICO_20_irrigated    |
-| 2020 | Vicosa         |   5 | yes   | VICO_20_nonirrigated |
-| 2021 | Vicosa         |   6 | no    | VICO_21_irrigated    |
-| 2020 | Sao Gotardo    |   7 | no    | SAOG_20_irrigated    |
-| 2020 | Sao Gotardo*   |   8 | yes   | SAOG_20_nonirrigated |
-| 2021 | Sao Gotardo    |   9 | no    | SAOG_21_irrigated    |
-| 2021 | Sao Gotardo(*) |  10 | yes   | SAOG_21_nonirrigated |
-| 2022 | Sao Gotardo(*) |  11 | yes   | SAOG_22_nonirrigated |
-| 2020 | Sete Lagoas    |  12 | no    | SETE_20_irrigated    |
-| 2021 | Itutinga       |  13 | yes   | ITUT_21_nonirrigated |
+| Year | Location      | Water | Name         | Trial period    |
+| 2018 | Rio Paranaiba | no    | irrigated    | May-September   |
+| 2019 | Rio Paraneiba | no    | irrigated    | May-September   |
+| 2019 | Vicosa        | no    | irrigated    | June-October    |
+| 2020 | Vicosa        | no    | irrigated    | June-October    |
+| 2020 | Vicosa        | yes   | nonirrigated | June-October    |
+| 2021 | Vicosa        | no    | irrigated    | June-October    |
+| 2020 | Sao Gotardo   | no    | irrigated    | May-August      |
+| 2020 | Sao Gotardo*  | yes   | nonirrigated | July-November   |
+| 2021 | Sao Gotardo   | no    | irrigated    | April-September |
+| 2021 | Sao Gotardo*  | yes   | nonirrigated | March-August    |
+| 2022 | Sao Gotardo*  | yes   | nonirrigated | March-August    |
+| 2020 | Sete Lagoas   | no    | irrigated    | July-November   |
+| 2021 | Itutinga      | yes   | nonirrigated | March-August    |
 
 *according to Casagrande et al. 2023, this location was inoculated with blast fungus.
 
